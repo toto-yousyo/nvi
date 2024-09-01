@@ -1,0 +1,14 @@
+return {
+    {
+        'nvim-neorg/neorg', 
+        config = function()
+            require("neorg").setup {
+                load = {
+                  ["core.defaults"] = {}, -- Loads default behaviour
+                  ["core.concealer"] = {}, -- Adds pretty icons to your documents
+                }
+            }
+        end,
+    },
+}
+
