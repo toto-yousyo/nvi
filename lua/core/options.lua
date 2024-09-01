@@ -1,7 +1,10 @@
 
 -- lang
--- vim.cmd('language en_US.utf8') -- 表示言語を英語にする（Linux）
-vim.cmd('language en_US') -- 表示言語を英語にする（Mac）
+if vim.fn.has('mac')==1 then -- 表示言語を英語にする（Mac）
+vim.cmd('language en_US')
+else
+vim.cmd('language en_US.utf8') -- 表示言語を英語にする（Linux）
+end
 
 -- ファイル
 vim.opt.fileencoding = "utf-8" -- エンコーディングをUTF-8に設定
