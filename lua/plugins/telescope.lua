@@ -16,11 +16,13 @@ telescope.setup {
   defaults = {
     mappings = {
       n = {
-        ["q"] = actions.close
+        ["q"] = actions.close 
       },
     },
+    file_ignore_patterns = {
+          "node_modules"
+    }, 
   },
-
 
   extensions = {
     file_browser = {

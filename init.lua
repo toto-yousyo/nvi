@@ -26,14 +26,17 @@ local opts = {
     log = { level = "info" },
 }
 
+vim.opt.modifiable = true
+
 -- leader key
 vim.g.mapleader = " "
 
--- lazy setup
-require("lazy").setup(plugins, opts)
 
 -- require core/ and user/
 require("core.options")
 require("core.autocmds")
+
+-- lazy setup
+require("lazy").setup(plugins, opts)
 require("core.keymaps")
 require("user.ui")

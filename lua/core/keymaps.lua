@@ -73,3 +73,13 @@ keymap("v", "v", "$h", opts)
 
 -- 0番レジスタを使いやすくした
 keymap("v", "<C-p>", '"0p', opts)
+
+local builtin = require("telescope.builtin")
+vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
+
+local opts = { noremap = true, silent = true }
+local term_opts = { silent = true }
+
+-- buffer�̈ړ�
+vim.keymap.set("n", "<C-n>", ":bnext<Return>", opts)
+vim.keymap.set("n", "<C-p>", ":bprevious<Return>", opts)

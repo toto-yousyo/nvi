@@ -147,11 +147,19 @@ return {
     "nvim-telescope/telescope-file-browser.nvim",
     dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
 },
-{'jose-elias-alvarez/null-ls.nvim'}, 
+-- {'jose-elias-alvarez/null-ls.nvim'}, 
 {'MunifTanjim/prettier.nvim'}, 
-{"williamboman/mason.nvim"}, 
+{"williamboman/mason.nvim", 
+  opts = { ensure_installed = { "markdownlint-cli2", "markdown-toc" } }, 
+}, 
 {"williamboman/mason-lspconfig.nvim"},
-{"neovim/nvim-lspconfig"},
+{"neovim/nvim-lspconfig", 
+  opts = {
+      servers = {
+        marksman = {}, 
+      }, 
+  }, 
+},
 {'brenoprata10/nvim-highlight-colors'}, 
 {'dinhhuy258/git.nvim'}, 
 {'ray-x/web-tools.nvim'}, 
@@ -161,10 +169,159 @@ return {
     ---@type ibl.config
     opts = {},
 }, 
-{'anuvyklack/pretty-fold.nvim'}, 
+-- {'anuvyklack/pretty-fold.nvim'}, 
 {
     "nvim-neorg/neorg",
     build = ":Neorg sync-parsers",
     dependencies = { "nvim-lua/plenary.nvim" },
+},
+{"stevearc/dressing.nvim", opts = {}},  
+{
+  "iamcco/markdown-preview.nvim",
+  cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+  build = function()
+    require("lazy").load({ plugins = { "markdown-preview.nvim" } })
+    vim.fn["mkdp#util#install"]()
+  end,
+  keys = {
+    {
+      "<leader>cp",
+      ft = "markdown",
+      "<cmd>MarkdownPreviewToggle<cr>",
+      desc = "Markdown Preview",
+    },
+  },
+  config = function()
+    vim.cmd([[do FileType]])
+  end,
 }, 
+{ "markdown-preview.nvim" }, 
+{
+  "MeanderingProgrammer/render-markdown.nvim",
+  opts = {
+    file_types = { "markdown", "norg", "rmd", "org" },
+    code = {
+      sign = false,
+      width = "block",
+      right_pad = 1,
+    },
+    heading = {
+      sign = false,
+      icons = {},
+    },
+  },
+},
+{
+  "stevearc/conform.nvim",
+  optional = true,
+  opts = {
+    formatters = {
+      ["markdown-toc"] = {
+        condition = function(_, ctx)
+          for _, line in ipairs(vim.api.nvim_buf_get_lines(ctx.buf, 0, -1, false)) do
+            if line:find("<!%-%- toc %-%->") then
+              return true
+            end
+          end
+        end,
+      },
+      ["markdownlint-cli2"] = {
+        condition = function(_, ctx)
+          local diag = vim.tbl_filter(function(d)
+            return d.source == "markdownlint"
+          end, vim.diagnostic.get(ctx.buf))
+          return #diag > 0
+        end,
+      },
+    },
+    formatters_by_ft = {
+      ["markdown"] = { "prettier", "markdownlint-cli2", "markdown-toc" },
+      ["markdown.mdx"] = { "prettier", "markdownlint-cli2", "markdown-toc" },
+    },
+  },
+}, 
+{
+  "nvimtools/none-ls.nvim",
+  optional = true,
+  opts = function(_, opts)
+    local nls = require("null-ls")
+    opts.sources = vim.list_extend(opts.sources or {}, {
+      nls.builtins.diagnostics.markdownlint_cli2,
+    })
+  end,
+}, 
+{
+  "mfussenegger/nvim-lint",
+  optional = true,
+  opts = {
+    linters_by_ft = {
+      markdown = { "markdownlint-cli2" },
+    },
+  },
+},   
+{
+  "folke/which-key.nvim",
+  event = "VeryLazy",
+  opts = {
+    -- your configuration comes here
+    -- or leave it empty to use the default settings
+    -- refer to the configuration section below
+  },
+  keys = {
+    {
+      "<leader>?",
+      function()
+        require("which-key").show({ global = false })
+      end,
+      desc = "Buffer Local Keymaps (which-key)",
+    },
+  },
+},
+{
+  "folke/trouble.nvim",
+  opts = {}, -- for default options, refer to the configuration section for custom setup.
+  cmd = "Trouble",
+  keys = {
+    {
+      "<leader>xx",
+      "<cmd>Trouble diagnostics toggle<cr>",
+      desc = "Diagnostics (Trouble)",
+    },
+    {
+      "<leader>xX",
+      "<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
+      desc = "Buffer Diagnostics (Trouble)",
+    },
+    {
+      "<leader>cs",
+      "<cmd>Trouble symbols toggle focus=false<cr>",
+      desc = "Symbols (Trouble)",
+    },
+    {
+      "<leader>cl",
+      "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
+      desc = "LSP Definitions / references / ... (Trouble)",
+    },
+    {
+      "<leader>xL",
+      "<cmd>Trouble loclist toggle<cr>",
+      desc = "Location List (Trouble)",
+    },
+    {
+      "<leader>xQ",
+      "<cmd>Trouble qflist toggle<cr>",
+      desc = "Quickfix List (Trouble)",
+    },
+  },
+},
+{
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = function()
+        require("nvim-surround").setup({
+            -- Configuration here, or leave empty to use defaults
+        })
+    end
+},   
 }
