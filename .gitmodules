@@ -1,0 +1,3 @@
+[submodule "lazy/dressing.nvim"]
+	path = lazy/dressing.nvim
+	url = https://github.com/stevearc/dressing.nvim.giT
