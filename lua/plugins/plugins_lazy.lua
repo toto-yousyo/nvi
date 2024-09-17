@@ -171,9 +171,15 @@ return {
 }, 
 -- {'anuvyklack/pretty-fold.nvim'}, 
 {
+    "vhyrro/luarocks.nvim", 
+    priority = 1000, 
+    config = true, 
+  }, 
+{
     "nvim-neorg/neorg",
-    build = ":Neorg sync-parsers",
-    dependencies = { "nvim-lua/plenary.nvim" },
+    lazy = false, 
+    version = "*", 
+    config = true, 
 },
 {"stevearc/dressing.nvim", opts = {}},  
 {
@@ -324,4 +330,5 @@ return {
         })
     end
 },   
+{ 'echasnovski/mini.nvim', version = false },
 }
