@@ -16,7 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
     { import = "plugins" },
 }
-
+vim.cmd('language en_US.UTF-8')
 -- local opts
 local opts = {
     root = vim.fn.stdpath("data") .. "/lazy",

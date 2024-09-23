@@ -70,3 +70,5 @@ local term_opts = { silent = true }
 
 vim.keymap.set("n", "<C-n>", ":bnext<Return>", opts)
 vim.keymap.set("n", "<C-p>", ":bprevious<Return>", opts)
+vim.api.nvim_set_keymap('n', '<leader>cc', ':CopilotChat<CR>', { noremap = true, silent = true })
+

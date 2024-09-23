@@ -330,5 +330,50 @@ return {
     end
 },   
 { 'echasnovski/mini.nvim', version = false },
-{'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'}
+{'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'}, 
+  {
+    "github/copilot.vim", 
+    lazy=false, 
+  }, 
+  {
+    "CopilotC-Nvim/CopilotChat.nvim",
+    branch = "canary",
+    dependencies = {
+      { "github/copilot.vim" }, 
+      { "nvim-lua/plenary.nvim" }, 
+    }, 
+    build = "make tiktoken", 
+    opts = {
+      debug = true,
+    }, 
+    keymaps = {
+      {
+        "n",
+        "<leader>ccq",
+        "<cmd>lua require('CopilotChat').ask(vim.fn.input('Quick Chat: '), { selection = require('CopilotChat.select').buffer })<cr>",
+        { noremap = true, silent = true, desc = "CopilotChat - Quick chat" },
+      },
+    },
+ }, 
+  {
+    "nvim-orgmode/orgmode", 
+    event = "VeryLazy",
+    ft = { 'org'},
+    config = function()
+      require('orgmode').setup({
+        org_agenda_files = {'~/org/*'},
+        org_default_notes_file = '~/org/refile.org',
+        org_hide_emphasis_markers = true,
+        org_todo_keywords = {'TODO', 'DOING', 'PENDING', 'DONE'},
+        org_capture_templates = {
+          T = { description = 'Todo', template = '* TODO %?\n  %u' },
+          D = { description = 'Deadline', template = '* TODO %?\n  DEADLINE: %t' },
+          E = { description = 'Event', template = '* %?\n  SCHEDULED: %t' },
+          j = { description = 'journal', template = '\n*** %<%Y-%m-%d> %<%A>\n**** %U\n\n%?',  target = '~/org/journal.org' },
+          n = { description = 'note', template = '\n* %<%Y-%m-%d> %<%A>\n\n%?',  target = '~/org/note.org' },
+        },
+      })
+    end,
+  } 
+
 }

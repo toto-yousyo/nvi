@@ -51,6 +51,7 @@ return {
    { name = 'nvim_lsp_signature_help' },
    { name = 'calc' },
    { name = 'path' }, 
+   { name = 'orgmode' }, 
   }, {
    { name = 'buffer', keyword_length = 2 },
   })
