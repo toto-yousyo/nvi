@@ -1,7 +1,7 @@
 
 -- lang
 if vim.fn.has('mac')==1 then -- 表示言語を英語にする（Mac）
-vim.cmd('language en_US')
+-- vim.cmd('language en_US')
 else
 vim.cmd('language en_US.utf8') -- 表示言語を英語にする（Linux）
 end
