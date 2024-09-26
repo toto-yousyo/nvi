@@ -361,16 +361,16 @@ return {
     ft = { 'org'},
     config = function()
       require('orgmode').setup({
-        org_agenda_files = {'../../org/*'},
-        org_default_notes_file = '../../org/refile.org',
+        org_agenda_files = {'~/.config/nvim/org/*'},
+        org_default_notes_file = '~/.config/nvim/org/refile.org',
         org_hide_emphasis_markers = true,
         org_todo_keywords = {'TODO', 'DOING', 'PENDING', 'DONE'},
         org_capture_templates = {
           T = { description = 'Todo', template = '* TODO %?\n  %u' },
           D = { description = 'Deadline', template = '* TODO %?\n  DEADLINE: %t' },
           E = { description = 'Event', template = '* %?\n  SCHEDULED: %t' },
-          j = { description = 'journal', template = '\n*** %<%Y-%m-%d> %<%A>\n**** %U\n\n%?',  target = '~/org/journal.org' },
-          n = { description = 'note', template = '\n* %<%Y-%m-%d> %<%A>\n\n%?',  target = '../../org/note.org' },
+          j = { description = 'journal', template = '\n*** %<%Y-%m-%d> %<%A>\n**** %U\n\n%?',  target = '~/.config/nvim/org/journal.org' },
+          n = { description = 'note', template = '\n* %<%Y-%m-%d> %<%A>\n\n%?',  target = '~/.config/nvim/org/note.org' },
         },
       })
     end,
