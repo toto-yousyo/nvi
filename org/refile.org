@@ -3,3 +3,5 @@
   [2024-09-25 Wed]
 * DOING kueeee
   [2024-09-26 Thu]
+* TODO test todoz where save placekj
+  [2024-09-26 Thu]
