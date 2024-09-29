@@ -9,11 +9,19 @@ return {
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
+    config = function()
+      require("tokyonight").setup({
+        style = "storm", 
+        on_colors = function(colors)
+          colors.comment = "#777ea0"
+        end, 
+    })
+  end, 
 },
 {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons',
-},
+    },
     opt = {},
     event = "VeryLazy",
 },
@@ -345,15 +353,17 @@ return {
     build = "make tiktoken", 
     opts = {
       debug = true,
+      mappings = {
+        complete = {
+          detail = 'Use @<Tab> or /<Tab> for options.',
+          insert ='<C-l>',
+        },
+        reset = {
+            normal = '<C-q>', 
+            insert = '<C-q>', 
+        }, 
+      }, 
     }, 
-    keymaps = {
-      {
-        "n",
-        "<leader>ccq",
-        "<cmd>lua require('CopilotChat').ask(vim.fn.input('Quick Chat: '), { selection = require('CopilotChat.select').buffer })<cr>",
-        { noremap = true, silent = true, desc = "CopilotChat - Quick chat" },
-      },
-    },
  }, 
   {
     "nvim-orgmode/orgmode", 
