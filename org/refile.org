@@ -7,3 +7,7 @@
 * DONE test todoz where save placekj
   CLOSED: [2024-09-30 Mon 17:06]
   [2024-09-26 Thu]
+* DOING Create plan to finish syoukai LP
+  [2024-10-01 Tue]
+* TODO 
+  [2024-10-01 Tue]
