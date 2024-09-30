@@ -1,7 +1,9 @@
 * DONE winter DM meeting with Fujimo
   DEADLINE: <2024-09-26 Thu> CLOSED: [2024-09-26 Thu 15:31]
   [2024-09-25 Wed]
-* DOING kueeee
+* DONE kueeee
+  CLOSED: [2024-09-30 Mon 17:06]
   [2024-09-26 Thu]
-* TODO test todoz where save placekj
+* DONE test todoz where save placekj
+  CLOSED: [2024-09-30 Mon 17:06]
   [2024-09-26 Thu]
