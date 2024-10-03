@@ -1,0 +1,5 @@
+* 2024-10-03 Thursday
+** [2024-10-03 Thu 17:44]
+
+I suddenly understand about component in figma. I learned before a week. but I did'nt catch up so much.
+And I learned React component. and this two apploach is same! this uinderstandnes is move so much my skill. 

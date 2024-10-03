@@ -11,6 +11,7 @@ return {
       local protocol = require('vim.lsp.protocol')
 
       local on_attach = function(client, bufnr)
+
         -- Format on save
         if client.server_capabilities.documentFormattingProvider then
           vim.api.nvim_create_autocmd("BufWritePre", {
@@ -22,7 +23,26 @@ return {
           })
         end
       end
-
+      -- Ruff setup
+      require('lspconfig').ruff.setup({
+        init_options = {
+          settings = {
+            ruff = {
+              enable = true,
+              lint = {
+                enable = true,
+                onOpen = true,
+                onSave = true,
+              },
+              format = {
+                enable = true,
+                onOpen = true,
+                onSave = true,
+              },
+            },
+          },
+        },
+      })
       -- TypeScript Server Setup
       nvim_lsp.ts_ls.setup({
         on_attach = on_attach,
