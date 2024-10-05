@@ -95,3 +95,11 @@ end
 vim.api.nvim_set_keymap("n", "<leader>ccp", "<cmd>lua ShowCopilotChatActionPrompt()<cr>", { noremap = true, silent = true })
 
 vim.keymap.set('i', '<C-L>', '<Plug>(copilot-accept-word)')
+-- ウィンドウの高さを増加
+vim.api.nvim_set_keymap('n', '<A-Up>', ':resize +2<CR>', { noremap = true, silent = true })
+-- ウィンドウの高さを減少
+vim.api.nvim_set_keymap('n', '<A-Down>', ':resize -2<CR>', { noremap = true, silent = true })
+-- ウィンドウの幅を増加
+vim.api.nvim_set_keymap('n', '<A-Right>', ':vertical resize +2<CR>', { noremap = true, silent = true })
+-- ウィンドウの幅を減少
+vim.api.nvim_set_keymap('n', '<A-Left>', ':vertical resize -2<CR>', { noremap = true, silent = true })
