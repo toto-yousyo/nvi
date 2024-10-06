@@ -1,0 +1,144 @@
+[[file:./landing_page_ai_design.org][Return to Main Page]]
+
+* Defining Your Base Design (Step 1)
+** Identify Key Components of Your Landing Page
+Your landing page is likely composed of the following key sections:
+- Header: Navigation bar, logo, and potentially a CTA (call-to-action) button.
+- Hero Section: A prominent image or video, headline, and a CTA button.
+- Features Section: A section highlighting the product’s key features, often in a grid or list format.
+- Testimonials/Reviews: Customer reviews or testimonials.
+- CTA Section: A final CTA, often with an eye-catching button.
+- Footer: Contact information, links, social media, etc.
+
+** Break Components into Reusable Units
+In React, define each of these sections as separate components. Example structure:
+
+#+begin_src bash
+/src
+ └── components
+     ├── Header.js
+     ├── HeroSection.js
+     ├── FeaturesSection.js
+     ├── TestimonialsSection.js
+     ├── CTASection.js
+     └── Footer.js
+#+end_src
+
+*** I create like this:
+#+begin_src bash
+/src
+ └── components
+     ├── Header.tsx
+     ├── HeroSection.tsx
+     ├── FirstCTASection.tsx
+     ├── NoAddictiveSection.tsx
+     ├── ThreePointsSection.tsx
+          ├── FirstPoint.tsx  
+          ├── SecondPoint.tsx  
+          └── ThirdPoint.tsx
+     ├── RecommendSection.tsx
+     ├── MissionSection.tsx
+     ├── UserVoiceSection.tsx
+     ├── SecondCTASection.tsx
+     └── Footer.js
+#+end_src
+Each component should be highly reusable and configurable. Here's an example of the Header component:
+
+#+begin_src js
+// Header.js
+import React from 'react';
+
+const Header = ({ logo, links, ctaText }) => {
+  return (
+    <header className="header">
+      <img src={logo} alt="Logo" className="header-logo" />
+      <nav className="header-nav">
+        {links.map((link, index) => (
+          <a key={index} href={link.href} className="header-link">
+            {link.text}
+          </a>
+        ))}
+      </nav>
+      <button className="header-cta">{ctaText}</button>
+    </header>
+  );
+};
+
+export default Header;
+#+end_src
+
+** Create a Base Landing Page
+Combine components to form a landing page:
+
+#+begin_src js
+// LandingPage.js
+import React from 'react';
+import Header from './components/Header';
+import HeroSection from './components/HeroSection';
+import FeaturesSection from './components/FeaturesSection';
+import TestimonialsSection from './components/TestimonialsSection';
+import CTASection from './components/CTASection';
+import Footer from './components/Footer';
+
+const LandingPage = () => {
+  const headerProps = {
+    logo: 'path/to/logo.png',
+    links: [
+      { href: '#home', text: 'Home' },
+      { href: '#features', text: 'Features' },
+      { href: '#testimonials', text: 'Testimonials' },
+      { href: '#contact', text: 'Contact' }
+    ],
+    ctaText: 'Get Started'
+  };
+
+  return (
+    <div>
+      <Header {...headerProps} />
+      <HeroSection />
+      <FeaturesSection />
+      <TestimonialsSection />
+      <CTASection />
+      <Footer />
+    </div>
+  );
+};
+
+export default LandingPage;
+#+end_src
+
+** Establish Props for Customization
+For each section, define props that allow customization. Example for HeroSection:
+
+#+begin_src js
+// HeroSection.js
+import React from 'react';
+
+const HeroSection = ({ imageSrc, title, subtitle, buttonLabel, imagePosition }) => {
+  return (
+    <section className={`hero-section hero-${imagePosition}`}>
+      <img src={imageSrc} alt="Hero" className="hero-image" />
+      <div className="hero-content">
+        <h1>{title}</h1>
+        <p>{subtitle}</p>
+        <button>{buttonLabel}</button>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
+#+end_src
+
+The imagePosition prop can take values like 'left', 'right', or 'center'.
+
+** Style Your Components
+Ensure basic styles using CSS or styled-components. These styles should be flexible enough for generating multiple design variations.
+
+** Summary of Step 1
+1. Identify components in your current design.
+2. Modularize them in React.
+3. Make each component configurable using props.
+4. Combine these modular components to create a base landing page.
+
+Once modularization is complete, move to Step 2 to define and test multiple design variations.

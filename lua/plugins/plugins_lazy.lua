@@ -14,6 +14,7 @@ return {
         style = "storm", 
         on_colors = function(colors)
           colors.comment = "#777ea0"
+          colors.bg_dark = "#161926"
         end, 
     })
   end, 

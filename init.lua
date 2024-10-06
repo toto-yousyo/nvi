@@ -31,7 +31,6 @@ vim.opt.modifiable = true
 -- leader key
 vim.g.mapleader = " "
 
-
 -- require core/ and user/
 require("core.options")
 require("core.autocmds")

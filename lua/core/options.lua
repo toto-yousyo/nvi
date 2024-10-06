@@ -61,7 +61,12 @@ vim.opt.signcolumn = "yes" -- サインカラムを表示
 vim.cmd("highlight LineNr guifg=#8a70ac")
 
 -- カーソルの形状
-vim.o.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
+-- vim.o.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
+vim.opt.guicursor = {
+  "n-v-c:block-Cursor/lCursor-blinkwait175-blinkon175-blinkoff175",
+  "i:ver25-Cursor/lCursor-blinkwait175-blinkon175-blinkoff175",
+  "r-cr:hor20-Cursor/lCursor-blinkwait175-blinkon175-blinkoff175"
+}
 -- fold
 vim.opt.foldcolumn = "1"
 vim.opt.foldlevel = 99
