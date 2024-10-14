@@ -39,3 +39,11 @@ require("core.autocmds")
 require("lazy").setup(plugins, opts)
 require("core.keymaps")
 require("user.ui")
+
+--clear notification
+vim.api.nvim_set_keymap(
+  'n', 
+    '<leader>n', 
+  '<cmd>lua require("notify").dismiss()<CR>', 
+  { noremap = true, silent = true }
+)
