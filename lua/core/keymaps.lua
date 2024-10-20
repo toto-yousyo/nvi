@@ -32,7 +32,8 @@ keymap("n", "sv", ":vsplit<Return><C-w>w", opts)
 
 keymap("n", "<ca>", "gg<S-v>G", opts)
 
-keymap("n", "x", '"_x', opts)
+-- Do not pass to clipboard
+-- keymap("n", "x", '"_x', opts)
 
 keymap("n", "dw", 'vb"_d', opts)
 
