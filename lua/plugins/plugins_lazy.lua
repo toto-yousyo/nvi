@@ -180,7 +180,10 @@ return {
 }, 
 {
   "vhyrro/luarocks.nvim", 
-  priority = 1000, 
+  priority = 1001, 
+  opts = {
+      rocks = { "magick" }, 
+  }, 
   config = true, 
 }, 
 {
@@ -401,16 +404,16 @@ return {
       "nvim-telescope/telescope.nvim"
     }
 }, 
-  {
-    'nvimdev/lspsaga.nvim', 
-    config = function()
-      require('lspsaga').setup({})
-    end, 
-    dependencies = {
-      'nvim-treesitter/nvim-treesitter',
-      'nvim-tree/nvim-web-devicons',
-    }
-  }, 
+{
+  'nvimdev/lspsaga.nvim', 
+  config = function()
+    require('lspsaga').setup({})
+  end, 
+  dependencies = {
+    'nvim-treesitter/nvim-treesitter',
+    'nvim-tree/nvim-web-devicons',
+  } 
+}, 
 {
   "GCBallesteros/NotebookNavigator.nvim",
   keys = {
@@ -422,17 +425,74 @@ return {
   },
   dependencies = {
     "echasnovski/mini.comment",
-    "hkupty/iron.nvim", -- repl provider
-    -- "akinsho/toggleterm.nvim", -- alternative repl provider
-    -- "benlubas/molten-nvim", -- alternative repl provider
     "anuvyklack/hydra.nvim",
+    "hkupty/iron.nvim",
+--      {
+--        "benlubas/molten-nvim",
+--       version = "^1.0.0", 
+--        dependencies = {
+--          {
+--            "3rd/image.nvim", 
+--            opts = {
+--              backend = "kitty", 
+--              max_width = 500,
+--              max_height = 500,
+--              max_height_window_percentage = math.huge,
+--              max_width_window_percentage = math.huge,
+--              window_overlap_clear_enabled = true, -- toggles images when windows are overlapped
+--              window_overlap_clear_ft_ignore = { "cmp_menu", "cmp_docs", "" },               
+--            }, 
+--          }, 
+--        }, 
+--      build = ":UpdateRemotePlugins",
+--      init = function()
+--           vim.g.molten_image_provider = "image.nvim"
+--          vim.g.molten_output_win_max_height = 500
+--        end, 
+--      }, 
   },
   event = "VeryLazy",
   config = function()
     local nn = require "notebook-navigator"
     nn.setup({ activate_hydra_keys = "<leader>h" })
   end,
-}, 
+},
+--  {
+--    "benlubas/molten-nvim",
+--    build = ":UpdateRemotePlugins",
+--    keys = {
+--      { "<leader>rm", "<cmd>MoltenInit python<CR>", desc = "MoltenInit python" },
+--    },
+--    init = function()
+--      vim.g.molten_auto_open_output = false
+--      vim.g.molten_virt_text_output = true
+--      vim.g.molten_virt_lines_off_by_1 = true
+--      vim.api.nvim_create_autocmd("User", {
+--        pattern = "MoltenInitPost",
+--        callback = function()
+--          vim.keymap.set("n", "<CR>", "<cmd>MoltenEvaluateOperator<CR>",
+--            { buffer = true, silent = true, desc = "Run" }
+--          )
+--          vim.keymap.set("v", "<CR>", ":<C-u>MoltenEvaluateVisual<CR>'>",
+--            { buffer = true, silent = true, desc = "Run selection" }
+--          )
+--          vim.keymap.set("n", "<S-CR>", "vax<CR>]xj",
+--            { remap = true, buffer = true, silent = true, desc = "Run cell and move" }
+--          )
+--          vim.keymap.set("n", "<leader>rh", "<cmd>MoltenHideOutput<CR>",
+--            { buffer = true, silent = true, desc = "Hide Output" }
+--          )
+--          vim.keymap.set("n", "<leader>ro", "<cmd>noautocmd MoltenEnterOutput<CR>",
+--            { buffer = true, silent = true, desc = "Show/Enter Output" }
+--          )
+--          vim.keymap.set("n", "<leader>ri",
+--            "<cmd>MoltenImportOutput<CR>",
+--            { buffer = true, silent = true, desc = "Import Notebook Output" }
+--          )
+--        end,
+--      })
+--    end,
+--  },  
 {
   "GCBallesteros/jupytext.nvim",
   config = true,
