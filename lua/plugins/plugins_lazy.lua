@@ -33,29 +33,29 @@ return {
   -- use opts = {} for passing setup options
   -- this is equivalent to setup({}) function
 }, 
-{
-  "nvim-neo-tree/neo-tree.nvim",
-  branch = "v3.x",
-  dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons",
-      "MunifTanjim/nui.nvim",
-  },
-  opts = {
-      window = {
-          position = "right",
-      },
-      event_handlers = {
-          {
-              event = "file_open_requested",
-              handler = function()
-                  require("neo-tree.command").execute({ action = "close" })
-              end,
-          },
-      },
-  },
-  cmd = "Neotree",
-},
+--{
+--  "nvim-neo-tree/neo-tree.nvim",
+--  branch = "v3.x",
+--  dependencies = {
+--      "nvim-lua/plenary.nvim",
+--      "nvim-tree/nvim-web-devicons",
+--      "MunifTanjim/nui.nvim",
+--  },
+--  opts = {
+--      window = {
+--          position = "right",
+--      },
+--      event_handlers = {
+--          {
+--              event = "file_open_requested",
+--              handler = function()
+--                  require("neo-tree.command").execute({ action = "close" })
+--              end,
+--          },
+--      },
+--  },
+--  cmd = "Neotree",
+--},
 -- tabline 
 -- {
 --  "kdheepak/tabline.nvim",
@@ -104,7 +104,8 @@ return {
       })
   end,
 },
-    -- noice
+
+    -- Diagnostics
 {
   "folke/noice.nvim",
   event = "VeryLazy",
@@ -129,6 +130,16 @@ return {
       },
   },
 },
+{
+  "nvimtools/none-ls.nvim",
+  optional = true,
+  opts = function(_, opts)
+    local nls = require("null-ls")
+    opts.sources = vim.list_extend(opts.sources or {}, {
+      nls.builtins.diagnostics.markdownlint_cli2,
+    })
+  end,
+}, 
 -- git
 {
   "lewis6991/gitsigns.nvim",
@@ -168,6 +179,16 @@ return {
       }, 
   }, 
 },
+{
+  'nvimdev/lspsaga.nvim', 
+  config = function()
+    require('lspsaga').setup({})
+  end, 
+  dependencies = {
+    'nvim-treesitter/nvim-treesitter',
+    'nvim-tree/nvim-web-devicons',
+  } 
+}, 
 {'brenoprata10/nvim-highlight-colors'}, 
 {'dinhhuy258/git.nvim'}, 
 {'ray-x/web-tools.nvim'}, 
@@ -186,13 +207,15 @@ return {
   }, 
   config = true, 
 }, 
-{
-  "nvim-neorg/neorg",
-  lazy = false, 
-  version = "*", 
-  config = true, 
-},
+--{
+--  "nvim-neorg/neorg",
+--  lazy = false, 
+--  version = "*", 
+--  config = true, 
+--},
 {"stevearc/dressing.nvim", opts = {}},  
+ 
+-- margdown
 {
   "iamcco/markdown-preview.nvim",
   cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
@@ -256,16 +279,6 @@ return {
       ["markdown.mdx"] = { "prettier", "markdownlint-cli2", "markdown-toc" },
     },
   },
-}, 
-{
-  "nvimtools/none-ls.nvim",
-  optional = true,
-  opts = function(_, opts)
-    local nls = require("null-ls")
-    opts.sources = vim.list_extend(opts.sources or {}, {
-      nls.builtins.diagnostics.markdownlint_cli2,
-    })
-  end,
 }, 
 {
   "mfussenegger/nvim-lint",
@@ -343,6 +356,8 @@ return {
 },   
 { 'echasnovski/mini.nvim', version = false },
 {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'}, 
+
+-- AI
 {
   "github/copilot.vim", 
   lazy=false, 
@@ -370,6 +385,23 @@ return {
   }, 
 }, 
 {
+  "jackMort/ChatGPT.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("chatgpt").setup({
+      api_key_cmd= os.getenv("OPENAI_API_KEY"), 
+  })
+    end,
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "folke/trouble.nvim",
+      "nvim-telescope/telescope.nvim"
+    }
+}, 
+
+-- orgmode
+{
   "nvim-orgmode/orgmode", 
   event = "VeryLazy",
   ft = { 'org'},
@@ -389,31 +421,8 @@ return {
     })
   end,
 }, 
-{
-  "jackMort/ChatGPT.nvim",
-    event = "VeryLazy",
-    config = function()
-      require("chatgpt").setup({
-      api_key_cmd= os.getenv("OPENAI_API_KEY"), 
-  })
-    end,
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      "nvim-lua/plenary.nvim",
-      "folke/trouble.nvim",
-      "nvim-telescope/telescope.nvim"
-    }
-}, 
-{
-  'nvimdev/lspsaga.nvim', 
-  config = function()
-    require('lspsaga').setup({})
-  end, 
-  dependencies = {
-    'nvim-treesitter/nvim-treesitter',
-    'nvim-tree/nvim-web-devicons',
-  } 
-}, 
+
+-- jupyter notebook
 {
   "GCBallesteros/NotebookNavigator.nvim",
   keys = {
@@ -426,7 +435,38 @@ return {
   dependencies = {
     "echasnovski/mini.comment",
     "anuvyklack/hydra.nvim",
-    "hkupty/iron.nvim",
+--    "hkupty/iron.nvim",
+    {
+        "benlubas/molten-nvim", 
+        version = "^1.6.0", 
+        dependencies = {
+          {
+            "3rd/image.nvim", 
+            config = function()
+              require("image").setup({
+              })
+            end,
+            opt = {
+              backend = "kitty", 
+              max_width = 500, 
+              max_height = 500,
+              max_height_window_percentage = math.huge, 
+              max_width_window_percentage = math.huge, 
+              window_overlap_clear_enabled = true, 
+              window_overlap_clear_ft_ignore = { "cmp_menu", "cmp_docs", "" }, 
+            }, 
+          },
+        }, 
+        build = ":UpdateRemotePlugins",
+--        cmd = "MoltenInit", 
+        init = function()
+          package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?/init.lua;"
+          package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?.lua;"
+
+           vim.g.molten_image_provider = "image.nvim"
+          vim.g.molten_output_win_max_height = 500
+        end,
+    }, 
   },
   event = "VeryLazy",
   config = function()
