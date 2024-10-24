@@ -444,12 +444,14 @@ return {
             "3rd/image.nvim", 
             config = function()
               require("image").setup({
+              max_width = 1000, 
+              max_height = 1000,
               })
             end,
             opt = {
               backend = "kitty", 
-              max_width = 500, 
-              max_height = 500,
+              max_width = 1000, 
+              max_height = 1000,
               max_height_window_percentage = math.huge, 
               max_width_window_percentage = math.huge, 
               window_overlap_clear_enabled = true, 
@@ -464,7 +466,7 @@ return {
           package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?.lua;"
 
            vim.g.molten_image_provider = "image.nvim"
-          vim.g.molten_output_win_max_height = 500
+          vim.g.molten_output_win_max_height = 1000
         end,
     }, 
   },
