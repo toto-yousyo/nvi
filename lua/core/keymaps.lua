@@ -51,17 +51,14 @@ keymap("n", "<Esc><Esc>", ":<C-u>set nohlsearch<Return>", opts)
 -- Insert --
 -- Press jk fast to exit insert mode
 keymap("i", "jk", "<ESC>", opts)
-
 keymap("i", ",", ",<Space>", opts)
 
 -- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
-
 keymap("v", "v", "$h", opts)
 
-keymap("v", "<C-p>", '"0p', opts)
 
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
@@ -72,7 +69,8 @@ local term_opts = { silent = true }
 vim.keymap.set("n", "<C-n>", ":bnext<Return>", opts)
 vim.keymap.set("n", "<C-p>", ":bprevious<Return>", opts)
 vim.api.nvim_set_keymap('n', '<leader>ccc', ':CopilotChat<CR>', { noremap = true, silent = true })
-
+-- 置き換えられた方のテキストはブラックホールレジスタに入る
+vim.keymap.set("v", "p", '"_dP', opts)
 -- バッファの内容全体を使って Copilot とチャットする
 function CopilotChatBuffer()
   local input = vim.fn.input("Quick Chat: ")
