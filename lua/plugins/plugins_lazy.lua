@@ -421,6 +421,12 @@ return {
     })
   end,
 }, 
+{ "amadeus/vim-mjml" },
+{ 
+  "ec965/mjml-preview.nvim",
+    ft = { "mjml" }, 
+    build = "cd app && npm install", 
+}, 
 
 -- jupyter notebook
 {

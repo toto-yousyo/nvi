@@ -22,4 +22,22 @@ Third: I start AI driven create.
 what is coefficient?
 
 what is alpha?
+* 2024-10-28 Monday
+
+                           <!--空ボトル入荷待ち-->
+                            {% if product.id == 175 or product.id == 56 or product.id == 58 %} 
+                               <!-- <div style="font-size:1rem; font-weight:bold; color:#BC6666;">入荷待ち</div>
+                                <p style="font-size:0.8rem; color:#707070;">10月下旬ごろ入荷予定です</p> -->
+* 2024-10-28 Monday
+
+                             <!--空ボトル入荷待ち -->
+                             {% if product.id == 175 or product.id == 56 or product.id == 58 %}
+                             <div style="text-align:center; width:100%; margin-top:10px;">
+                                <span style="font-size:1rem; font-weight:bold; color:#BC6666;">入荷待ち</span><br />
+                                <span style="font-size:0.8rem; color:#707070;">10月下旬ごろ入荷予定です</span>
+                            </div>
+
+   {% else %} 
+
+                         {% endif %} <!--空ボトル入荷待ち -->                            
 
