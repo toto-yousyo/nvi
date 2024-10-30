@@ -1,6 +1,6 @@
 {
   "ChatGPT.nvim": { "branch": "main", "commit": "5b6d296eefc75331e2ff9f0adcffbd7d27862dd6" },
-  "CopilotChat.nvim": { "branch": "canary", "commit": "e4cb1fc27e0def7571e5329f522a79e9555a5502" },
+  "CopilotChat.nvim": { "branch": "canary", "commit": "82604838fa511d1cbf8174e99f2fbc3a0dc0abe4" },
   "NotebookNavigator.nvim": { "branch": "main", "commit": "20cb6f72939194e32eb3060578b445e5f2e7ae8b" },
   "bufferline.nvim": { "branch": "main", "commit": "5c528bee3dd797d5bd6bae5f229411939b25b203" },
   "catppuccin": { "branch": "main", "commit": "65bf0b16f57a3db70d6a93ac68882dd9a31d0565" },
