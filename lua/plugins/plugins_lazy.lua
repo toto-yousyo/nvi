@@ -131,6 +131,20 @@ return {
   },
 },
 {
+    "jose-elias-alvarez/null-ls.nvim",
+    config = function()
+      local null_ls = require("null-ls")
+
+      null_ls.setup({
+          sources = {
+              null_ls.builtins.formatting.stylua,
+              null_ls.builtins.diagnostics.eslint,
+              null_ls.builtins.completion.spell,
+          },
+      })
+    end, 
+}, 
+{
   "nvimtools/none-ls.nvim",
   optional = true,
   opts = function(_, opts)
@@ -146,16 +160,16 @@ return {
   config = true,
   event = { "BufReadPre", "BufNewFile" },
 },
-{'hrsh7th/nvim-cmp', event = { 'InsertEnter', 'CmdlineEnter' }, },
-{'hrsh7th/cmp-nvim-lsp', event = 'InsertEnter'}, 
-{'hrsh7th/cmp-buffer', event = 'InsertEnter'},
-{'hrsh7th/cmp-path', event = 'InsertEnter'},
-{'hrsh7th/cmp-cmdline', event = 'ModeChanged'}, 
-{'hrsh7th/cmp-nvim-lsp-signature-help', event = 'InsertEnter'},
-{'hrsh7th/cmp-nvim-lsp-document-symbol', event = 'InsertEnter'},
-{'hrsh7th/cmp-calc', event = 'InsertEnter'},
-{'onsails/lspkind.nvim', event = 'InsertEnter'},
-{'rafamadriz/friendly-snippets', event = 'InsertEnter'},
+--{'hrsh7th/nvim-cmp', event = { 'InsertEnter', 'CmdlineEnter' }, },
+--{'hrsh7th/cmp-nvim-lsp', event = 'InsertEnter'}, 
+--{'hrsh7th/cmp-buffer', event = 'InsertEnter'},
+--{'hrsh7th/cmp-path', event = 'InsertEnter'},
+--{'hrsh7th/cmp-cmdline', event = 'ModeChanged'}, 
+--{'hrsh7th/cmp-nvim-lsp-signature-help', event = 'InsertEnter'},
+--{'hrsh7th/cmp-nvim-lsp-document-symbol', event = 'InsertEnter'},
+--{'hrsh7th/cmp-calc', event = 'InsertEnter'},
+--{'onsails/lspkind.nvim', event = 'InsertEnter'},
+--{'rafamadriz/friendly-snippets', event = 'InsertEnter'},
 
 {
   'nvim-telescope/telescope.nvim', tag = '0.1.8', 
@@ -165,7 +179,27 @@ return {
   "nvim-telescope/telescope-file-browser.nvim",
   dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
 },
-{'MunifTanjim/prettier.nvim'}, 
+{
+    'MunifTanjim/prettier.nvim', 
+    config = function()
+        local status, prettier = pcall(require, "prettier")
+        if (not status) then return end
+
+        prettier.setup {
+          bin = 'prettierd',
+          filetypes = {
+            "css",
+            "javascript",
+            "javascriptreact",
+            "typescript",
+            "typescriptreact",
+            "json",
+            "scss",
+            "less"
+          }
+        }
+    end,
+}, 
 {
   "williamboman/mason.nvim", 
   opts = { ensure_installed = { "markdownlint-cli2", "markdown-toc" } }, 
@@ -203,7 +237,7 @@ return {
   "vhyrro/luarocks.nvim", 
   priority = 1001, 
   opts = {
-      rocks = { "magick" }, 
+ --     rocks = { "magick" }, 
   }, 
   config = true, 
 }, 
