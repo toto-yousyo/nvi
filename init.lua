@@ -30,7 +30,7 @@ vim.opt.modifiable = true
 
 -- leader key
 vim.g.mapleader = " "
-vim.g.python3_host_prog = "/Users/takadahisakazu/.pyenv/shims/python3"
+vim.g.python3_host_prog = "/Library/Python/3.12/bin/python3"
 -- require core/ and user/
 require("core.options")
 require("core.autocmds")
