@@ -36,12 +36,12 @@
   "orgmode": { "branch": "master", "commit": "fafb8f14d85a68d8f0fca812444cc0fd594f0168" },
   "plenary.nvim": { "branch": "master", "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d" },
   "prettier.nvim": { "branch": "main", "commit": "d98e732cb73690b07c00c839c924be1d1d9ac5c2" },
-  "render-markdown.nvim": { "branch": "main", "commit": "d69a885e1bf21cb329d2eafe56fd80b6de627216" },
+  "render-markdown.nvim": { "branch": "main", "commit": "78a2eb7fc273f36790aa390262f390a3265eedff" },
   "telescope-file-browser.nvim": { "branch": "master", "commit": "626998e5c1b71c130d8bc6cf7abb6709b98287bb" },
   "telescope.nvim": { "branch": "master", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
   "tokyonight.nvim": { "branch": "main", "commit": "ce91ba480070c95f40753e4663e32b4632ac6db3" },
   "trouble.nvim": { "branch": "main", "commit": "3dc00c0447c016cd43e03054c3d49436a1f2076d" },
   "vim-mjml": { "branch": "master", "commit": "cb6249b1b49994ecaebd67a7fb421dce923bcd02" },
-  "web-tools.nvim": { "branch": "master", "commit": "eb0ac27bd3eb0beb06b7190a11e2e043049a4ccc" },
+  "web-tools.nvim": { "branch": "master", "commit": "75ad0e0aba714cc84217287c718c9797d8ef9209" },
   "which-key.nvim": { "branch": "main", "commit": "68e37e12913a66b60073906f5d3f14dee0de19f2" }
 }
