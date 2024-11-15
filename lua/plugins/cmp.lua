@@ -75,8 +75,8 @@ return {
   })
  })
 
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
-vim.cmd('let g:vsnip_filetypes = {}')
+--local capabilities = require('cmp_nvim_lsp').default_capabilities()
+--vim.cmd('let g:vsnip_filetypes = {}')
 end,
   },
 }
