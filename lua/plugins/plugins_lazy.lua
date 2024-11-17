@@ -1,10 +1,20 @@
 return {
-{
-  "catppuccin/nvim",
-  name = "catppuccin",
-  lazy = false,
-  priority = 1000,
-},
+--{
+--  "catppuccin/nvim",
+--  config = functions()
+--    require("catppuccin").setup({
+--      flavour = "mocha",
+--      color_overrides = {
+--          mocha = {
+--              base = "#12121a",
+--              mantle = "#12121a",
+--              crust = "#12121a",
+--          },
+--      },
+--      transparent_background = true,
+--    })
+--  end, 
+--},
 {
   "folke/tokyonight.nvim",
   lazy = false,
@@ -12,6 +22,11 @@ return {
   config = function()
     require("tokyonight").setup({
       style = "storm", 
+      transparent = true, 
+      styles = {
+          sidebar = "transparent",
+          floats = "transparent",
+      }, 
       on_colors = function(colors)
         colors.comment = "#777ea0"
         colors.bg_dark = "#161926"
@@ -160,16 +175,16 @@ return {
   config = true,
   event = { "BufReadPre", "BufNewFile" },
 },
---{'hrsh7th/nvim-cmp', event = { 'InsertEnter', 'CmdlineEnter' }, },
---{'hrsh7th/cmp-nvim-lsp', event = 'InsertEnter'}, 
---{'hrsh7th/cmp-buffer', event = 'InsertEnter'},
---{'hrsh7th/cmp-path', event = 'InsertEnter'},
---{'hrsh7th/cmp-cmdline', event = 'ModeChanged'}, 
---{'hrsh7th/cmp-nvim-lsp-signature-help', event = 'InsertEnter'},
---{'hrsh7th/cmp-nvim-lsp-document-symbol', event = 'InsertEnter'},
---{'hrsh7th/cmp-calc', event = 'InsertEnter'},
---{'onsails/lspkind.nvim', event = 'InsertEnter'},
---{'rafamadriz/friendly-snippets', event = 'InsertEnter'},
+{'hrsh7th/nvim-cmp', event = { 'InsertEnter', 'CmdlineEnter' }, },
+{'hrsh7th/cmp-nvim-lsp', event = 'InsertEnter'}, 
+{'hrsh7th/cmp-buffer', event = 'InsertEnter'},
+{'hrsh7th/cmp-path', event = 'InsertEnter'},
+{'hrsh7th/cmp-cmdline', event = 'ModeChanged'}, 
+{'hrsh7th/cmp-nvim-lsp-signature-help', event = 'InsertEnter'},
+{'hrsh7th/cmp-nvim-lsp-document-symbol', event = 'InsertEnter'},
+{'hrsh7th/cmp-calc', event = 'InsertEnter'},
+{'onsails/lspkind.nvim', event = 'InsertEnter'},
+{'rafamadriz/friendly-snippets', event = 'InsertEnter'},
 
 {
   'nvim-telescope/telescope.nvim', tag = '0.1.8', 
