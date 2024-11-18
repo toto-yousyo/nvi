@@ -47,6 +47,7 @@ return {
 
  sources = cmp.config.sources({
    { name = 'nvim_lsp' },
+   { name = 'copilot'}, 
    { name = 'tailwindcss' },
    { name = 'nvim_lsp_signature_help' },
    { name = 'calc' },
@@ -76,6 +77,22 @@ return {
  })
 
 --local capabilities = require('cmp_nvim_lsp').default_capabilities()
+local has_words_before = function()
+  if vim.api.nvim_buf_get_option(0, "buftype") == "prompt" then return false end
+  local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+  return col ~= 0 and vim.api.nvim_buf_get_text(0, line-1, 0, line-1, col, {})[1]:match("^%s*$") == nil
+end
+cmp.setup({
+  mapping = {
+    ["<Tab>"] = vim.schedule_wrap(function(fallback)
+      if cmp.visible() and has_words_before() then
+        cmp.confirm({select = true})
+      else
+        fallback()
+      end
+    end),
+  },
+})
 --vim.cmd('let g:vsnip_filetypes = {}')
 end,
   },

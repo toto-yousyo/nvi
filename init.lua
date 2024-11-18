@@ -47,3 +47,4 @@ vim.api.nvim_set_keymap(
   '<cmd>lua require("notify").dismiss()<CR>', 
   { noremap = true, silent = true }
 )
+

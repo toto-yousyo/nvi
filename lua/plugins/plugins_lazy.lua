@@ -45,38 +45,8 @@ return {
   'windwp/nvim-autopairs',
   event = "InsertEnter",
   config = true
-  -- use opts = {} for passing setup options
-  -- this is equivalent to setup({}) function
 }, 
---{
---  "nvim-neo-tree/neo-tree.nvim",
---  branch = "v3.x",
---  dependencies = {
---      "nvim-lua/plenary.nvim",
---      "nvim-tree/nvim-web-devicons",
---      "MunifTanjim/nui.nvim",
---  },
---  opts = {
---      window = {
---          position = "right",
---      },
---      event_handlers = {
---          {
---              event = "file_open_requested",
---              handler = function()
---                  require("neo-tree.command").execute({ action = "close" })
---              end,
---          },
---      },
---  },
---  cmd = "Neotree",
---},
--- tabline 
--- {
---  "kdheepak/tabline.nvim",
-    -- opts = {},
-    -- event = "BufWinEnter",
--- },
+
 -- nvim-treesitter
 {
   "nvim-treesitter/nvim-treesitter",
@@ -183,7 +153,16 @@ return {
 {'hrsh7th/cmp-nvim-lsp-signature-help', event = 'InsertEnter'},
 {'hrsh7th/cmp-nvim-lsp-document-symbol', event = 'InsertEnter'},
 {'hrsh7th/cmp-calc', event = 'InsertEnter'},
-{'onsails/lspkind.nvim', event = 'InsertEnter'},
+{
+  'onsails/lspkind.nvim', event = 'InsertEnter', 
+  config = function()
+    require('lspkind').init({
+        symbol_map = {
+          Copilot = '',
+        }, 
+      })
+  end,
+},
 {'rafamadriz/friendly-snippets', event = 'InsertEnter'},
 
 {
@@ -410,29 +389,68 @@ return {
 {
   "github/copilot.vim", 
   lazy=false, 
+    config = function()
+      require("copilot").setup({
+        suggestion = {enabled = false},
+        panel = {enabled = false},
+      })
+    end,
 }, 
 {
-  "CopilotC-Nvim/CopilotChat.nvim",
-  branch = "canary",
-  dependencies = {
-    { "github/copilot.vim" }, 
-    { "nvim-lua/plenary.nvim" }, 
-  }, 
-  build = "make tiktoken", 
-  opts = {
-    debug = true,
-    mappings = {
-      complete = {
-        detail = 'Use @<Tab> or /<Tab> for options.',
-        insert ='<C-l>',
-      },
-      reset = {
-          normal = '<C-q>', 
-          insert = '<C-q>', 
-      }, 
-    }, 
-  }, 
+  "zbirenbaum/copilot.lua",
+  cmd = "Copilot",
+  config = function()
+    require("copilot").setup({
+      suggestion = {enabled = false},
+      panel = {enabled = false},
+      copilot_node_command = 'node'
+    })
+  end,
 }, 
+{
+  "zbirenbaum/copilot-cmp",
+  config = function ()
+    require("copilot_cmp").setup({
+        --for copilots
+  })
+  end
+}, 
+--{
+--  "CopilotC-Nvim/CopilotChat.nvim",
+--  branch = "canary",
+--  dependencies = {
+--    { "zbirenbaum/copilot.lua" }, -- or github/copilot.vim
+--    { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
+--  },
+--  build = "make tiktoken", -- Only on MacOS or Linux
+--  opts = {
+--    -- See Configuration section for options
+--  },
+--  -- See Commands section for default commands if you want to lazy load on them
+--},
+
+--{
+--  "CopilotC-Nvim/CopilotChat.nvim",
+--  branch = "canary",
+--  dependencies = {
+--    { "github/copilot.vim" }, 
+--    { "nvim-lua/plenary.nvim" }, 
+--  }, 
+--  build = "make tiktoken", 
+--  opts = {
+--    debug = true,
+--    mappings = {
+--      complete = {
+--        detail = 'Use @<Tab> or /<Tab> for options.',
+--        insert ='<C-l>',
+--      },
+--      reset = {
+--          normal = '<C-q>', 
+--          insert = '<C-q>', 
+--      }, 
+--    }, 
+--  }, 
+--}, 
 {
   "jackMort/ChatGPT.nvim",
     event = "VeryLazy",
