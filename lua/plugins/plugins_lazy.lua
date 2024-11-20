@@ -244,79 +244,79 @@ return {
 {"stevearc/dressing.nvim", opts = {}},  
  
 -- margdown
-{
-  "iamcco/markdown-preview.nvim",
-  cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-  build = function()
-    require("lazy").load({ plugins = { "markdown-preview.nvim" } })
-    vim.fn["mkdp#util#install"]()
-  end,
-  keys = {
-    {
-      "<leader>cp",
-      ft = "markdown",
-      "<cmd>MarkdownPreviewToggle<cr>",
-      desc = "Markdown Preview",
-    },
-  },
-  config = function()
-    vim.cmd([[do FileType]])
-  end,
-}, 
-{"markdown-preview.nvim"}, 
-{
-  "MeanderingProgrammer/render-markdown.nvim",
-  opts = {
-    file_types = { "markdown", "norg", "rmd", "org" },
-    code = {
-      sign = false,
-      width = "block",
-      right_pad = 1,
-    },
-    heading = {
-      sign = false,
-      icons = {},
-    },
-  },
-},
-{
-  "stevearc/conform.nvim",
-  optional = true,
-  opts = {
-    formatters = {
-      ["markdown-toc"] = {
-        condition = function(_, ctx)
-          for _, line in ipairs(vim.api.nvim_buf_get_lines(ctx.buf, 0, -1, false)) do
-            if line:find("<!%-%- toc %-%->") then
-              return true
-            end
-          end
-        end,
-      },
-      ["markdownlint-cli2"] = {
-        condition = function(_, ctx)
-          local diag = vim.tbl_filter(function(d)
-            return d.source == "markdownlint"
-          end, vim.diagnostic.get(ctx.buf))
-          return #diag > 0
-        end,
-      },
-    },
-    formatters_by_ft = {
-      ["markdown"] = { "prettier", "markdownlint-cli2", "markdown-toc" },
-      ["markdown.mdx"] = { "prettier", "markdownlint-cli2", "markdown-toc" },
-    },
-  },
-}, 
-{
-  "mfussenegger/nvim-lint",
-  optional = true,
-  opts = {
-    linters_by_ft = {
-      markdown = { "markdownlint-cli2" },
-    },
-  },
-},   
+--{
+--  "iamcco/markdown-preview.nvim",
+--  cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+--  build = function()
+--    require("lazy").load({ plugins = { "markdown-preview.nvim" } })
+--    vim.fn["mkdp#util#install"]()
+--  end,
+--  keys = {
+--    {
+--      "<leader>cp",
+--      ft = "markdown",
+--      "<cmd>MarkdownPreviewToggle<cr>",
+--      desc = "Markdown Preview",
+--    },
+--  },
+--  config = function()
+--    vim.cmd([[do FileType]])
+--  end,
+--}, 
+--{"markdown-preview.nvim"}, 
+--{
+--  "MeanderingProgrammer/render-markdown.nvim",
+--  opts = {
+--    file_types = { "markdown", "norg", "rmd", "org" },
+--    code = {
+--      sign = false,
+--      width = "block",
+--      right_pad = 1,
+--    },
+--    heading = {
+--      sign = false,
+--      icons = {},
+--    },
+--  },
+--},
+--{
+--  "stevearc/conform.nvim",
+--  optional = true,
+--  opts = {
+--    formatters = {
+--      ["markdown-toc"] = {
+--        condition = function(_, ctx)
+--          for _, line in ipairs(vim.api.nvim_buf_get_lines(ctx.buf, 0, -1, false)) do
+--            if line:find("<!%-%- toc %-%->") then
+--              return true
+--            end
+--          end
+--        end,
+--      },
+--      ["markdownlint-cli2"] = {
+--        condition = function(_, ctx)
+--          local diag = vim.tbl_filter(function(d)
+--            return d.source == "markdownlint"
+--          end, vim.diagnostic.get(ctx.buf))
+--          return #diag > 0
+--        end,
+--      },
+--    },
+--    formatters_by_ft = {
+--      ["markdown"] = { "prettier", "markdownlint-cli2", "markdown-toc" },
+--      ["markdown.mdx"] = { "prettier", "markdownlint-cli2", "markdown-toc" },
+--    },
+--  },
+--}, 
+--{
+--  "mfussenegger/nvim-lint",
+--  optional = true,
+--  opts = {
+--    linters_by_ft = {
+--      markdown = { "markdownlint-cli2" },
+--    },
+--  },
+--},   
 {
   "folke/which-key.nvim",
   event = "VeryLazy",
@@ -488,70 +488,70 @@ return {
     })
   end,
 }, 
-{ "amadeus/vim-mjml" },
-{ 
-  "ec965/mjml-preview.nvim",
-    ft = { "mjml" }, 
-    build = "cd app && npm install", 
-}, 
+--{ "amadeus/vim-mjml" },
+--{ 
+--  "ec965/mjml-preview.nvim",
+--    ft = { "mjml" }, 
+--    build = "cd app && npm install", 
+--}, 
 
 -- jupyter notebook
-{
-  "GCBallesteros/NotebookNavigator.nvim",
-  keys = {
-    { "]h", function() require("notebook-navigator").move_cell "d" end },
-    { "[h", function() require("notebook-navigator").move_cell "u" end },
-    { "<leader>X", "<cmd>lua require('notebook-navigator').run_cell()<cr>" },
-    { "<leader>x", "<cmd>lua require('notebook-navigator').run_and_move()<cr>" },
-    { "<leader>ax", "<cmd>lua require('notebook-navigator').run_all_cells()<cr>" },
-  },
-  dependencies = {
-    "echasnovski/mini.comment",
-    "anuvyklack/hydra.nvim",
---    "hkupty/iron.nvim",
-    {
-        "benlubas/molten-nvim", 
-        version = "^1.6.0", 
-        dependencies = {
-          {
-            "3rd/image.nvim", 
-            config = function()
-              require("image").setup({
-              max_width = 1000, 
-              max_height = 1000,
-              })
-            end,
-            opt = {
-              backend = "kitty", 
-              max_width = 1000, 
-              max_height = 1000,
-              max_height_window_percentage = math.huge, 
-              max_width_window_percentage = math.huge, 
-              window_overlap_clear_enabled = true, 
-              window_overlap_clear_ft_ignore = { "cmp_menu", "cmp_docs", "" }, 
-            }, 
-          },
-        }, 
-        build = ":UpdateRemotePlugins",
---        cmd = "MoltenInit", 
-        init = function()
-          package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?/init.lua;"
-          package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?.lua;"
-
-           vim.g.molten_image_provider = "image.nvim"
-          vim.g.molten_output_win_max_height = 1000
-        end,
-    }, 
-  },
-  event = "VeryLazy",
-  config = function()
-    local nn = require "notebook-navigator"
-    nn.setup({ activate_hydra_keys = "<leader>h" })
-  end,
-},
-{
-  "GCBallesteros/jupytext.nvim",
-  config = true,
-  lazy=false,
-}
+--{
+--  "GCBallesteros/NotebookNavigator.nvim",
+--  keys = {
+--    { "]h", function() require("notebook-navigator").move_cell "d" end },
+--    { "[h", function() require("notebook-navigator").move_cell "u" end },
+--    { "<leader>X", "<cmd>lua require('notebook-navigator').run_cell()<cr>" },
+--    { "<leader>x", "<cmd>lua require('notebook-navigator').run_and_move()<cr>" },
+--    { "<leader>ax", "<cmd>lua require('notebook-navigator').run_all_cells()<cr>" },
+--  },
+--  dependencies = {
+--    "echasnovski/mini.comment",
+--    "anuvyklack/hydra.nvim",
+----    "hkupty/iron.nvim",
+--    {
+--        "benlubas/molten-nvim", 
+--        version = "^1.6.0", 
+--        dependencies = {
+--          {
+--            "3rd/image.nvim", 
+--            config = function()
+--              require("image").setup({
+--              max_width = 1000, 
+--              max_height = 1000,
+--              })
+--            end,
+--            opt = {
+--              backend = "kitty", 
+--              max_width = 1000, 
+--              max_height = 1000,
+--              max_height_window_percentage = math.huge, 
+--              max_width_window_percentage = math.huge, 
+--              window_overlap_clear_enabled = true, 
+--              window_overlap_clear_ft_ignore = { "cmp_menu", "cmp_docs", "" }, 
+--            }, 
+--          },
+--        }, 
+--        build = ":UpdateRemotePlugins",
+----        cmd = "MoltenInit", 
+--        init = function()
+--          package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?/init.lua;"
+--          package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?.lua;"
+--
+--           vim.g.molten_image_provider = "image.nvim"
+--          vim.g.molten_output_win_max_height = 1000
+--        end,
+--    }, 
+--  },
+--  event = "VeryLazy",
+--  config = function()
+--    local nn = require "notebook-navigator"
+--    nn.setup({ activate_hydra_keys = "<leader>h" })
+--  end,
+--},
+--{
+--  "GCBallesteros/jupytext.nvim",
+--  config = true,
+--  lazy=false,
+--}
 }
