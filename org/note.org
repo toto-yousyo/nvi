@@ -44,4 +44,13 @@ what is alpha?
 CRの改行コードの表現にはもう一つの方法があり、下記のように特殊な入力方法で記述できるのです。
 
 [Ctrl + V]、[Ctrl + M]と二文字、入力
+* 2024-11-25 Monday
+
+  * wezterm key binds
+    ** PANE
+      CTRL+SHIFT+ALT	"	SplitVertical={domain="CurrentPaneDomain"}
+      CTRL+SHIFT+ALT	%	SplitHorizontal={domain="CurrentPaneDomain"}
+      CTRL+SHIFT+ALT	LeftArrow	AdjustPaneSize={"Left", 1}
+      same as any direction..
+      CTRL+SHIFT	Z	TogglePaneZoomState
 
