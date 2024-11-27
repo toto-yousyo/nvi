@@ -10,13 +10,13 @@
 * DONE Create plan to finish syoukai LP
   CLOSED: [2024-11-15 Fri 09:31]
   [2024-10-01 Tue]
-* DONE 
+* DONE
   CLOSED: [2024-11-15 Fri 09:31]
   [2024-10-01 Tue]
-* DONE 
+* DONE
   CLOSED: [2024-11-15 Fri 09:31]
   [2024-10-09 Wed]
-* DONE Change Teiki 
+* DONE Change Teiki
   CLOSED: [2024-11-15 Fri 09:31]
 * DONE LED王子回生病院に送る
   DEADLINE: <2024-11-15 Fri> CLOSED: [2024-11-15 Fri 09:31]
@@ -43,8 +43,8 @@
   :LOGBOOK:
   CLOCK: [2024-11-22 Fri 10:10]--[2024-11-22 Fri 14:52] => 4:42
   :END:
-  
-  
+
+
   [2024-11-22 Fri]
 * DONE 公式HPの「SHOP　LIST」の更新をお願いします<m(__)m>
   CLOSED: [2024-11-25 Mon 17:58]
@@ -116,7 +116,7 @@ TEL：03-3527-9977
   [2024-11-27 Wed]
 * TODO 前岡さんから、amazonpayの２こめで選択して、そのまま降りていくと、ボタン飲みなのでd、文章を追加する。最初のもの 12/2からスタートできるように
   DEADLINE: <2024-11-28 Thu>
-  
+
   [2024-11-27 Wed]
 * TODO プレビュー画面でamazon payでエラーがでる
   カートに商品を入れる。
@@ -134,3 +134,7 @@ TEL：03-3527-9977
   DEADLINE: <2024-11-29 Fri>
   右に少し検索窓を出す。など、
   [2024-11-27 Wed]
+
+* TODO インスタのをみんなに共有する
+DEADLINE: <2024-11-28 Thu>
+[2024-11-27 Wed 18:11]
