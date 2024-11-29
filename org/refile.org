@@ -22,7 +22,7 @@
   DEADLINE: <2024-11-15 Fri> CLOSED: [2024-11-15 Fri 09:31]
   [2024-11-15 Fri]
 * TODO 100粒の購入画面に非表示にできるかどうか
-  DEADLINE: <2024-11-26 Tue>
+DEADLINE: <2024-12-06 Fri>
   [2024-11-21 Thu]
 * DONE メールの設定をする
   CLOSED: [2024-11-21 Thu 14:20]
@@ -95,7 +95,7 @@ TEL：03-3527-9977
   CLOSED: [2024-11-27 Wed 10:42]
   [2024-11-25 Mon]
 * TODO 問い合わせからログインに入ってしまうロコエオ変更する
-  DEADLINE: <2024-11-26 Tue>
+DEADLINE: <2024-12-03 Tue>
   [2024-11-25 Mon]
 * DONE 山田さんに連絡、校正してもらう
   DEADLINE: <2024-11-26 Tue> CLOSED: [2024-11-28 Thu 09:45]
@@ -115,7 +115,7 @@ TEL：03-3527-9977
   i
   [2024-11-27 Wed]
 * TODO 前岡さんから、amazonpayの２こめで選択して、そのまま降りていくと、ボタン飲みなのでd、文章を追加する。最初のもの 12/2からスタートできるように
-  DEADLINE: <2024-11-28 Thu>
+DEADLINE: <2024-12-02 Mon>
 
   [2024-11-27 Wed]
 * TODO プレビュー画面でamazon payでエラーがでる
@@ -131,10 +131,12 @@ TEL：03-3527-9977
   DEADLINE: <2024-11-27 Wed> CLOSED: [2024-11-27 Wed 13:20]
   [2024-11-27 Wed]
 * TODO ご利用ガイドの虫眼鏡がわかりにくい
-  DEADLINE: <2024-11-29 Fri>
+DEADLINE: <2024-12-03 Tue>
   右に少し検索窓を出す。など、
   [2024-11-27 Wed]
-* TODO ステップメール１通目画像がうまく表示できないことをチェック
+* DONE ステップメール１通目画像がうまく表示できないことをチェック
+CLOSED: [2024-11-29 Fri 18:31]
+- State "DONE"       from "TODO"       [2024-11-29 Fri 18:31]
   DEADLINE: <2024-11-29 Fri>
   [2024-11-28 Thu]
 * DONE instaパネルの修正　永原さんから
@@ -143,7 +145,9 @@ TEL：03-3527-9977
 * DONE 「木のうた」様は掲載しな外す
   DEADLINE: <2024-11-29 Fri> CLOSED: [2024-11-29 Fri 09:57]
   [2024-11-28 Thu]
-* TODO 画像の購入　定期用の女性イラスト２点とFV用画像
+* DONE 画像の購入　定期用の女性イラスト２点とFV用画像
+CLOSED: [2024-11-29 Fri 18:31]
+- State "DONE"       from "TODO"       [2024-11-29 Fri 18:31]
   DEADLINE: <2024-11-29 Fri>
   [2024-11-29 Fri]
 * TODO 経営計画書KPTを作成する
@@ -151,11 +155,13 @@ TEL：03-3527-9977
 * DONE 経営計画書ご指摘の英語
   CLOSED: [2024-11-29 Fri 11:37]
   [2024-11-29 Fri]
-* TODO 定期のうぇび修正
+* DONE 定期のうぇび修正
+CLOSED: [2024-11-29 Fri 18:31]
+- State "DONE"       from "TODO"       [2024-11-29 Fri 18:31]
   DEADLINE: <2024-11-29 Fri>
   [2024-11-29 Fri]
 * TODO 「メール_冬の販促_休眠追加分241206」
-  DEADLINE: <2024-11-29 Fri>
+DEADLINE: <2024-12-02 Mon>
   冬の販促メールの追加分のテキストです。
 https://docs.google.com/document/d/1VvP5EMQgI6k7Bg0UirJPGbXIyhYwmeAU3H0VuMukXg0/edit?tab=t.0
 
@@ -177,9 +183,13 @@ TOP画像の制作をお願いいたします。
   [2024-11-29 Fri]
 * TODO MAMARIAL fes.2024
   DEADLINE: <2024-12-02 Mon>
-追加する　
+追加する
   https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/edit?tab=t.0
   [2024-11-29 Fri]
 * TODO 水素棚卸
   DEADLINE: <2024-12-02 Mon>
   [2024-11-29 Fri]
+
+* TODO 年末帰るまでに、オーヴォのクリーム買って欲しいそうです
+DEADLINE: <2024-12-02 Mon>
+[2024-11-29 Fri 18:29]
