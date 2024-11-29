@@ -32,8 +32,8 @@
   :LOGBOOK:
   CLOCK: [2024-11-22 Fri 15:36]--[2024-11-22 Fri 15:58] => 0:22
   :END:
-* TODO 経営計画書のデザイン進める　朝礼と、社長からの修正
-  DEADLINE: <2024-11-26 Tue>
+* DONE 経営計画書のデザイン進める　朝礼と、社長からの修正
+  DEADLINE: <2024-11-26 Tue> CLOSED: [2024-11-29 Fri 11:25]
   [2024-11-22 Fri]
 * DONE Instagram のページ進める
   DEADLINE: <2024-11-26 Tue> CLOSED: [2024-11-25 Mon 17:58]
@@ -124,8 +124,8 @@ TEL：03-3527-9977
   進むとエラーになった 100支払い方法でエラーがでた。
   戻って、一旦他の支払い方法を選択して、もう一度戻ってamazonpayを選ぶと、大丈夫になる。
   [2024-11-27 Wed]
-* TODO お追いかけDM作成
-  DEADLINE: <2024-11-27 Wed>
+* DONE お追いかけDM作成
+  DEADLINE: <2024-11-27 Wed> CLOSED: [2024-11-29 Fri 11:37]
   [2024-11-27 Wed]
 * DONE 本番に適用する
   DEADLINE: <2024-11-27 Wed> CLOSED: [2024-11-27 Wed 13:20]
@@ -137,9 +137,49 @@ TEL：03-3527-9977
 * TODO ステップメール１通目画像がうまく表示できないことをチェック
   DEADLINE: <2024-11-29 Fri>
   [2024-11-28 Thu]
-* TODO instaパネルの修正　永原さんから
-  DEADLINE: <2024-11-29 Fri>
+* DONE instaパネルの修正　永原さんから
+  DEADLINE: <2024-11-29 Fri> CLOSED: [2024-11-29 Fri 11:36]
   [2024-11-28 Thu]
-* TODO 「木のうた」様は掲載しな外す
-  DEADLINE: <2024-11-29 Fri>
+* DONE 「木のうた」様は掲載しな外す
+  DEADLINE: <2024-11-29 Fri> CLOSED: [2024-11-29 Fri 09:57]
   [2024-11-28 Thu]
+* TODO 画像の購入　定期用の女性イラスト２点とFV用画像
+  DEADLINE: <2024-11-29 Fri>
+  [2024-11-29 Fri]
+* TODO 経営計画書KPTを作成する
+  [2024-11-29 Fri]
+* DONE 経営計画書ご指摘の英語
+  CLOSED: [2024-11-29 Fri 11:37]
+  [2024-11-29 Fri]
+* TODO 定期のうぇび修正
+  DEADLINE: <2024-11-29 Fri>
+  [2024-11-29 Fri]
+* TODO 「メール_冬の販促_休眠追加分241206」
+  DEADLINE: <2024-11-29 Fri>
+  冬の販促メールの追加分のテキストです。
+https://docs.google.com/document/d/1VvP5EMQgI6k7Bg0UirJPGbXIyhYwmeAU3H0VuMukXg0/edit?tab=t.0
+
+TOP画像の制作をお願いいたします。
+休眠の方向けのため、冬の販促メールで制作していただいた画像のテキストの一部変更をお願いします。
+「1年間の感謝を込めて特別なご案内」
+→「感謝の気持ちを込めて特別なご案内」
+
+12/6（金）配信予定
+  [2024-11-29 Fri]
+* TODO adobestockの支払いをトータルに送る
+  DEADLINE: <2024-12-02 Mon>
+  [2024-11-29 Fri]
+* TODO 月しょの計測をする
+  DEADLINE: <2024-12-02 Mon>
+  [2024-11-29 Fri]
+* TODO takaoさん修正連絡すっる
+  DEADLINE: <2024-12-02 Mon>
+  [2024-11-29 Fri]
+* TODO MAMARIAL fes.2024
+  DEADLINE: <2024-12-02 Mon>
+追加する　
+  https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/edit?tab=t.0
+  [2024-11-29 Fri]
+* TODO 水素棚卸
+  DEADLINE: <2024-12-02 Mon>
+  [2024-11-29 Fri]
