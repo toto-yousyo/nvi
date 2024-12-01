@@ -47,7 +47,6 @@ return {
 
  sources = cmp.config.sources({
    { name = 'nvim_lsp' },
-   { name = 'copilot'}, 
    { name = 'tailwindcss' },
    { name = 'nvim_lsp_signature_help' },
    { name = 'calc' },

@@ -288,35 +288,35 @@ return {
 {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'}, 
 
 -- AI
-{
-  "github/copilot.vim", 
-  lazy=false, 
-    config = function()
-      require("copilot").setup({
-        suggestion = {enabled = false},
-        panel = {enabled = false},
-      })
-    end,
-}, 
-{
-  "zbirenbaum/copilot.lua",
-  cmd = "Copilot",
-  config = function()
-    require("copilot").setup({
-      suggestion = {enabled = false},
-      panel = {enabled = false},
-      copilot_node_command = 'node'
-    })
-  end,
-}, 
-{
-  "zbirenbaum/copilot-cmp",
-  config = function ()
-    require("copilot_cmp").setup({
-        --for copilots
-  })
-  end
-}, 
+--{
+--  "github/copilot.vim", 
+--  lazy=false, 
+--    config = function()
+--      require("copilot").setup({
+--        suggestion = {enabled = false},
+--        panel = {enabled = false},
+--      })
+--    end,
+--}, 
+--{
+--  "zbirenbaum/copilot.lua",
+--  cmd = "Copilot",
+--  config = function()
+--    require("copilot").setup({
+--      suggestion = {enabled = false},
+--      panel = {enabled = false},
+--      copilot_node_command = 'node'
+--    })
+--  end,
+--}, 
+--{
+--  "zbirenbaum/copilot-cmp",
+--  config = function ()
+--    require("copilot_cmp").setup({
+--        --for copilots
+--  })
+--  end
+--}, 
 --{
 --  "CopilotC-Nvim/CopilotChat.nvim",
 --  branch = "canary",

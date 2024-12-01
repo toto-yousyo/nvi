@@ -193,3 +193,6 @@ TOP画像の制作をお願いいたします。
 * TODO 年末帰るまでに、オーヴォのクリーム買って欲しいそうです
 DEADLINE: <2024-12-02 Mon>
 [2024-11-29 Fri 18:29]
+* TODO remove copilotchat
+  DEADLINE: <2024-12-18 Wed>
+  [2024-11-30 Sat]
