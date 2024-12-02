@@ -130,8 +130,8 @@ DEADLINE: <2024-12-02 Mon>
 * DONE 本番に適用する
   DEADLINE: <2024-11-27 Wed> CLOSED: [2024-11-27 Wed 13:20]
   [2024-11-27 Wed]
-* TODO ご利用ガイドの虫眼鏡がわかりにくい
-DEADLINE: <2024-12-03 Tue>
+* DONE ご利用ガイドの虫眼鏡がわかりにくい
+DEADLINE: <2024-12-03 Tue> CLOSED: [2024-12-02 Mon 10:30]
   右に少し検索窓を出す。など、
   [2024-11-27 Wed]
 * DONE ステップメール１通目画像がうまく表示できないことをチェック
@@ -172,17 +172,17 @@ TOP画像の制作をお願いいたします。
 
 12/6（金）配信予定
   [2024-11-29 Fri]
-* TODO adobestockの支払いをトータルに送る
-  DEADLINE: <2024-12-02 Mon>
+* DONE adobestockの支払いをトータルに送る
+  DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-02 Mon 11:27]
   [2024-11-29 Fri]
 * TODO 月しょの計測をする
   DEADLINE: <2024-12-02 Mon>
   [2024-11-29 Fri]
-* TODO takaoさん修正連絡すっる
-  DEADLINE: <2024-12-02 Mon>
+* DONE takaoさん修正連絡すっる
+  DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-02 Mon 10:30]
   [2024-11-29 Fri]
-* TODO MAMARIAL fes.2024
-  DEADLINE: <2024-12-02 Mon>
+* DONE MAMARIAL fes.2024
+  DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-02 Mon 13:23]
 追加する
   https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/edit?tab=t.0
   [2024-11-29 Fri]
@@ -193,6 +193,18 @@ TOP画像の制作をお願いいたします。
 * TODO 年末帰るまでに、オーヴォのクリーム買って欲しいそうです
 DEADLINE: <2024-12-02 Mon>
 [2024-11-29 Fri 18:29]
-* TODO remove copilotchat
-  DEADLINE: <2024-12-18 Wed>
+* DONE remove copilotchat
+  DEADLINE: <2024-12-18 Wed> CLOSED: [2024-12-02 Mon 10:31]
   [2024-11-30 Sat]
+* TODO サンエスさんポンプ発注くる
+  [2024-12-02 Mon]
+* TODO  中期計画を最新のものにする
+  [2024-12-02 Mon]
+* TODO 定期購入のページを仕上げる
+  DEADLINE: <2024-12-02 Mon>
+  [2024-12-02 Mon]
+* TODO tyuuki経営計画と重点実施とを更新する高橋さんに送る前に
+  [2024-12-02 Mon]
+* TODO googleの請求明細をこばやっしさんに送る
+  DEADLINE: <2024-12-10 Tue>
+  [2024-12-02 Mon]
