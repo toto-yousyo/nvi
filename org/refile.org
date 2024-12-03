@@ -118,7 +118,8 @@ DEADLINE: <2024-12-03 Tue>
 DEADLINE: <2024-12-02 Mon>
 
   [2024-11-27 Wed]
-* TODO プレビュー画面でamazon payでエラーがでる
+* DONE プレビュー画面でamazon payでエラーがでる
+  CLOSED: [2024-12-03 Tue 16:56]
   カートに商品を入れる。
   支払い方法にamazonpayを選択する
   進むとエラーになった 100支払い方法でエラーがでた。
@@ -150,7 +151,8 @@ CLOSED: [2024-11-29 Fri 18:31]
 - State "DONE"       from "TODO"       [2024-11-29 Fri 18:31]
   DEADLINE: <2024-11-29 Fri>
   [2024-11-29 Fri]
-* TODO 経営計画書KPTを作成する
+* DONE 経営計画書KPTを作成する
+  CLOSED: [2024-12-03 Tue 17:59]
   [2024-11-29 Fri]
 * DONE 経営計画書ご指摘の英語
   CLOSED: [2024-11-29 Fri 11:37]
@@ -160,8 +162,8 @@ CLOSED: [2024-11-29 Fri 18:31]
 - State "DONE"       from "TODO"       [2024-11-29 Fri 18:31]
   DEADLINE: <2024-11-29 Fri>
   [2024-11-29 Fri]
-* TODO 「メール_冬の販促_休眠追加分241206」
-DEADLINE: <2024-12-02 Mon>
+* DONE 「メール_冬の販促_休眠追加分241206」
+DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-03 Tue 08:49]
   冬の販促メールの追加分のテキストです。
 https://docs.google.com/document/d/1VvP5EMQgI6k7Bg0UirJPGbXIyhYwmeAU3H0VuMukXg0/edit?tab=t.0
 
@@ -175,8 +177,8 @@ TOP画像の制作をお願いいたします。
 * DONE adobestockの支払いをトータルに送る
   DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-02 Mon 11:27]
   [2024-11-29 Fri]
-* TODO 月しょの計測をする
-  DEADLINE: <2024-12-02 Mon>
+* DONE 月しょの計測をする
+  DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-03 Tue 14:48]
   [2024-11-29 Fri]
 * DONE takaoさん修正連絡すっる
   DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-02 Mon 10:30]
@@ -186,25 +188,61 @@ TOP画像の制作をお願いいたします。
 追加する
   https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/edit?tab=t.0
   [2024-11-29 Fri]
-* TODO 水素棚卸
-  DEADLINE: <2024-12-02 Mon>
+* DONE 水素棚卸
+  DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-03 Tue 14:47]
   [2024-11-29 Fri]
 
-* TODO 年末帰るまでに、オーヴォのクリーム買って欲しいそうです
-DEADLINE: <2024-12-02 Mon>
+* DONE 年末帰るまでに、オーヴォのクリーム買って欲しいそうです
+DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-03 Tue 08:49]
 [2024-11-29 Fri 18:29]
 * DONE remove copilotchat
   DEADLINE: <2024-12-18 Wed> CLOSED: [2024-12-02 Mon 10:31]
   [2024-11-30 Sat]
 * TODO サンエスさんポンプ発注くる
+  DEADLINE: <2024-12-04 Wed>
   [2024-12-02 Mon]
-* TODO  中期計画を最新のものにする
+* DONE  中期計画を最新のものにする
+  CLOSED: [2024-12-03 Tue 08:49]
   [2024-12-02 Mon]
-* TODO 定期購入のページを仕上げる
-  DEADLINE: <2024-12-02 Mon>
+* DONE 定期購入のページを仕上げる
+  DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-03 Tue 08:49]
   [2024-12-02 Mon]
-* TODO tyuuki経営計画と重点実施とを更新する高橋さんに送る前に
+* DONE tyuuki経営計画と重点実施とを更新する高橋さんに送る前に
+  CLOSED: [2024-12-03 Tue 16:56]
   [2024-12-02 Mon]
 * TODO googleの請求明細をこばやっしさんに送る
   DEADLINE: <2024-12-10 Tue>
   [2024-12-02 Mon]
+* DONE :
+  CLOSED: [2024-12-03 Tue 16:56]
+  [2024-12-02 Mon]
+* TODO 新規会員登録で変に移動しない変更up
+  DEADLINE: <2024-12-09 Mon>
+  [2024-12-02 Mon]
+
+  [2024-12-03 Tue]
+* DONE 社長よりご連r買うがありました。
+  DEADLINE: <2024-12-03 Tue> CLOSED: [2024-12-03 Tue 14:48]
+シャンドエルブさんの取扱店舗です。
+
+以下の店舗のみ掲載をお願いします<m(__)m>
+
+
+新浦安
+恵比寿
+大森
+田端
+武蔵浦和
+西船橋
+浦安メトロピア
+大船
+草加VARIE
+
+  [2024-12-03 Tue]
+* DONE 浦安メトロピアtuika 
+  DEADLINE: <2024-12-03 Tue> CLOSED: [2024-12-03 Tue 14:48]
+
+  [2024-12-03 Tue]
+* TODO 面談11じ 
+  DEADLINE: <2024-12-04 Wed>
+  [2024-12-03 Tue]
