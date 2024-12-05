@@ -198,8 +198,8 @@ DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-03 Tue 08:49]
 * DONE remove copilotchat
   DEADLINE: <2024-12-18 Wed> CLOSED: [2024-12-02 Mon 10:31]
   [2024-11-30 Sat]
-* TODO サンエスさんポンプ発注くる
-  DEADLINE: <2024-12-04 Wed>
+* DONE サンエスさんポンプ発注くる
+  DEADLINE: <2024-12-04 Wed> CLOSED: [2024-12-05 Thu 12:48]
   [2024-12-02 Mon]
 * DONE  中期計画を最新のものにする
   CLOSED: [2024-12-03 Tue 08:49]
@@ -243,6 +243,15 @@ DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-03 Tue 08:49]
   DEADLINE: <2024-12-03 Tue> CLOSED: [2024-12-03 Tue 14:48]
 
   [2024-12-03 Tue]
-* TODO 面談11じ 
-  DEADLINE: <2024-12-04 Wed>
+* DONE 面談11じ 
+  DEADLINE: <2024-12-04 Wed> CLOSED: [2024-12-05 Thu 12:52]
   [2024-12-03 Tue]
+* DONE 2024振替エリの作成
+  DEADLINE: <2024-12-05 Thu> CLOSED: [2024-12-05 Thu 17:35]
+  [2024-12-05 Thu]
+* DONE 
+  CLOSED: [2024-12-05 Thu 08:48]
+  [2024-12-05 Thu]
+* DONE 解約率は福井さんに出してもらった方がいいか？
+  DEADLINE: <2024-12-05 Thu> CLOSED: [2024-12-05 Thu 17:34]
+  [2024-12-05 Thu]

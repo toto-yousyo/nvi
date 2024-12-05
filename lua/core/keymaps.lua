@@ -102,7 +102,8 @@ vim.api.nvim_set_keymap('n', '<A-Down>', ':resize -2<CR>', { noremap = true, sil
 vim.api.nvim_set_keymap('n', '<A-Right>', ':vertical resize +2<CR>', { noremap = true, silent = true })
 -- ウィンドウの幅を減少
 vim.api.nvim_set_keymap('n', '<A-Left>', ':vertical resize -2<CR>', { noremap = true, silent = true })
-
+-- Terminal-Normal
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 -- ChatGPT
 -- https://github.com/jackMort/ChatGPT.nvim
 vim.keymap.set('n', '<Leader>tk', '<cmd>:ChatGPT<cr>')
