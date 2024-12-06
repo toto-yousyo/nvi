@@ -255,3 +255,9 @@ DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-03 Tue 08:49]
 * DONE 解約率は福井さんに出してもらった方がいいか？
   DEADLINE: <2024-12-05 Thu> CLOSED: [2024-12-05 Thu 17:34]
   [2024-12-05 Thu]
+* DONE ovoクリームを下げる
+  DEADLINE: <2024-12-06 Fri> CLOSED: [2024-12-06 Fri 09:15]
+  [2024-12-06 Fri]
+* TODO 2409 20入り箱１３seat ート
+  DEADLINE: <2024-12-09 Mon>
+  [2024-12-06 Fri]
