@@ -95,7 +95,7 @@ TEL：03-3527-9977
   CLOSED: [2024-11-27 Wed 10:42]
   [2024-11-25 Mon]
 * TODO 問い合わせからログインに入ってしまうロコエオ変更する
-DEADLINE: <2024-12-03 Tue>
+DEADLINE: <2024-12-10 Tue>
   [2024-11-25 Mon]
 * DONE 山田さんに連絡、校正してもらう
   DEADLINE: <2024-11-26 Tue> CLOSED: [2024-11-28 Thu 09:45]
@@ -114,8 +114,8 @@ DEADLINE: <2024-12-03 Tue>
   DEADLINE: <2024-11-28 Thu> CLOSED: [2024-11-28 Thu 11:11]
   i
   [2024-11-27 Wed]
-* TODO 前岡さんから、amazonpayの２こめで選択して、そのまま降りていくと、ボタン飲みなのでd、文章を追加する。最初のもの 12/2からスタートできるように
-DEADLINE: <2024-12-02 Mon>
+* DONE 前岡さんから、amazonpayの２こめで選択して、そのまま降りていくと、ボタン飲みなのでd、文章を追加する。最初のもの 12/2からスタートできるように
+DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-09 Mon 10:17]
 
   [2024-11-27 Wed]
 * DONE プレビュー画面でamazon payでエラーがでる
@@ -210,14 +210,14 @@ DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-03 Tue 08:49]
 * DONE tyuuki経営計画と重点実施とを更新する高橋さんに送る前に
   CLOSED: [2024-12-03 Tue 16:56]
   [2024-12-02 Mon]
-* TODO googleの請求明細をこばやっしさんに送る
-  DEADLINE: <2024-12-10 Tue>
+* DONE googleの請求明細をこばやっしさんに送る
+  DEADLINE: <2024-12-10 Tue> CLOSED: [2024-12-09 Mon 10:18]
   [2024-12-02 Mon]
 * DONE :
   CLOSED: [2024-12-03 Tue 16:56]
   [2024-12-02 Mon]
 * TODO 新規会員登録で変に移動しない変更up
-  DEADLINE: <2024-12-09 Mon>
+  DEADLINE: <2024-12-10 Tue>
   [2024-12-02 Mon]
 
   [2024-12-03 Tue]
@@ -258,6 +258,6 @@ DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-03 Tue 08:49]
 * DONE ovoクリームを下げる
   DEADLINE: <2024-12-06 Fri> CLOSED: [2024-12-06 Fri 09:15]
   [2024-12-06 Fri]
-* TODO 2409 20入り箱１３seat ート
-  DEADLINE: <2024-12-09 Mon>
+* DONE 2409 20入り箱１３seat ート
+  DEADLINE: <2024-12-09 Mon> CLOSED: [2024-12-09 Mon 10:44]
   [2024-12-06 Fri]
