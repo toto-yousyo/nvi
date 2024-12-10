@@ -261,3 +261,24 @@ DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-03 Tue 08:49]
 * DONE 2409 20入り箱１３seat ート
   DEADLINE: <2024-12-09 Mon> CLOSED: [2024-12-09 Mon 10:44]
   [2024-12-06 Fri]
+* TODO 「冬の販促DM_後追いメール(3回目)」
+  DEADLINE: <2024-12-13 Fri>
+12/19(木)に配信予定です。
+制作をお願いいたします。
+  [2024-12-10 Tue]
+* DONE こちら、アットコスメ店舗の電話番号はOKですが、そのほかの修正が反映されていないようです。
+  DEADLINE: <2024-12-11 Wed> CLOSED: [2024-12-10 Tue 17:30]
+ご確認お願いします。
+  [2024-12-10 Tue]
+* TODO 掲載情報にウェルネスメディア「yoi」と「オレンジページ公式web」を追加しました。
+  DEADLINE: <2024-12-11 Wed>
+宜しくお願いいたします。
+  https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/edit?usp=sharing
+  [2024-12-10 Tue]
+* DONE ７箱入りで副社長に確認致しました。
+  DEADLINE: <2024-12-10 Tue> CLOSED: [2024-12-10 Tue 17:00]
+1シート20枚の印刷
+  [2024-12-10 Tue]
+* TODO フロート出荷する
+  DEADLINE: <2024-12-11 Wed>
+  [2024-12-10 Tue]
