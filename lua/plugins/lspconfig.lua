@@ -23,6 +23,19 @@ return {
           })
         end
       end
+      -- pylsp setup
+      require('lspconfig').pylsp.setup {
+          cmd = { "pylsp" },
+          filetypes = { "python" },
+          settings = {
+              pylsp = {
+                  plugins = {
+                      pyflakes = { enabled = true },
+                      pycodestyle = { enabled = true },
+                  },
+              },
+          },
+      }
       -- Ruff setup
       require('lspconfig').ruff.setup({
         init_options = {
