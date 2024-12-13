@@ -271,7 +271,7 @@ DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-03 Tue 08:49]
 ご確認お願いします。
   [2024-12-10 Tue]
 * TODO 掲載情報にウェルネスメディア「yoi」と「オレンジページ公式web」を追加しました。
-  DEADLINE: <2024-12-11 Wed>
+  DEADLINE: <2024-12-16 Mon>
 宜しくお願いいたします。
   https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/edit?usp=sharing
   [2024-12-10 Tue]
@@ -279,6 +279,23 @@ DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-03 Tue 08:49]
   DEADLINE: <2024-12-10 Tue> CLOSED: [2024-12-10 Tue 17:00]
 1シート20枚の印刷
   [2024-12-10 Tue]
-* TODO フロート出荷する
-  DEADLINE: <2024-12-11 Wed>
+* DONE フロート出荷する
+  DEADLINE: <2024-12-11 Wed> CLOSED: [2024-12-13 Fri 17:00]
   [2024-12-10 Tue]
+* TODO 10N　ロット2409の９箱入りラベル
+  DEADLINE: <2024-12-13 Fri>
+
+１０４３０本入荷÷180本入り＝57.94枚
+
+５７．９４枚÷２０枚（1シート）＝3シート
+
+印刷をお願い申し上げます。
+  [2024-12-13 Fri]
+* DONE WEB TOPページのお知らせ、変更をお願いします。
+  DEADLINE: <2024-12-13 Fri> CLOSED: [2024-12-13 Fri 11:43]
+社内研修のお知らせ　→　年末年始の営業案内
+https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/edit?tab=t.0#heading=h.m85mz9yn8zxz
+  [2024-12-13 Fri]
+* TODO メールを送る
+  DEADLINE: <2024-12-13 Fri>
+  [2024-12-13 Fri]
