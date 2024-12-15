@@ -108,7 +108,6 @@ return {
           sources = {
               null_ls.builtins.formatting.stylua,
               null_ls.builtins.diagnostics.eslint,
-              null_ls.builtins.completion.spell,
           },
       })
     end, 
@@ -173,7 +172,8 @@ return {
             "typescriptreact",
             "json",
             "scss",
-            "less"
+            "less",
+            "python"
           }
         }
     end,
@@ -183,14 +183,7 @@ return {
   opts = { ensure_installed = { "markdownlint-cli2", "markdown-toc" } }, 
 }, 
 {"williamboman/mason-lspconfig.nvim"},
-{
-  "neovim/nvim-lspconfig", 
-  opts = {
-      servers = {
-        marksman = {}, 
-      }, 
-  }, 
-},
+{"neovim/nvim-lspconfig"}, 
 {
   'nvimdev/lspsaga.nvim', 
   config = function()
@@ -390,64 +383,29 @@ return {
     })
   end,
 }, 
-
--- jupyter notebook
---{
---  "GCBallesteros/NotebookNavigator.nvim",
---  keys = {
---    { "]h", function() require("notebook-navigator").move_cell "d" end },
---    { "[h", function() require("notebook-navigator").move_cell "u" end },
---    { "<leader>X", "<cmd>lua require('notebook-navigator').run_cell()<cr>" },
---    { "<leader>x", "<cmd>lua require('notebook-navigator').run_and_move()<cr>" },
---    { "<leader>ax", "<cmd>lua require('notebook-navigator').run_all_cells()<cr>" },
---  },
---  dependencies = {
---    "echasnovski/mini.comment",
---    "anuvyklack/hydra.nvim",
-----    "hkupty/iron.nvim",
---    {
---        "benlubas/molten-nvim", 
---        version = "^1.6.0", 
---        dependencies = {
---          {
---            "3rd/image.nvim", 
---            config = function()
---              require("image").setup({
---              max_width = 1000, 
---              max_height = 1000,
---              })
---            end,
---            opt = {
---              backend = "kitty", 
---              max_width = 1000, 
---              max_height = 1000,
---              max_height_window_percentage = math.huge, 
---              max_width_window_percentage = math.huge, 
---              window_overlap_clear_enabled = true, 
---              window_overlap_clear_ft_ignore = { "cmp_menu", "cmp_docs", "" }, 
---            }, 
---          },
---        }, 
---        build = ":UpdateRemotePlugins",
-----        cmd = "MoltenInit", 
---        init = function()
---          package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?/init.lua;"
---          package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?.lua;"
---
---           vim.g.molten_image_provider = "image.nvim"
---          vim.g.molten_output_win_max_height = 1000
---        end,
---    }, 
---  },
---  event = "VeryLazy",
---  config = function()
---    local nn = require "notebook-navigator"
---    nn.setup({ activate_hydra_keys = "<leader>h" })
---  end,
---},
---{
---  "GCBallesteros/jupytext.nvim",
---  config = true,
---  lazy=false,
---}
+{
+  "folke/zen-mode.nvim",
+  opts = {
+    -- your configuration comes here
+    -- or leave it empty to use the default settings
+    -- refer to the configuration section below
+  }
+}, 
+{
+    'akinsho/toggleterm.nvim', 
+    version = "*", 
+    opts = {
+      size = 100,
+      open_mapping = [[<c-t>]],
+      hide_numbers = true,
+      shade_filetypes = {},
+      shade_terminals = true,
+      shading_factor = 2,
+      start_in_insert = true,
+      insert_mappings = true,
+      persist_size = true,
+      direction = 'float',
+      close_on_exit = true,
+    }
+}
 }

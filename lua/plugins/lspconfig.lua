@@ -2,42 +2,20 @@ return {
   {
     'neovim/nvim-lspconfig',
     config = function()
-      local status, nvim_lsp = pcall(require, "lspconfig")
-      if not status then
-        vim.notify("Failed to load lspconfig", vim.log.levels.ERROR)
-        return
-      end
-
-      local protocol = require('vim.lsp.protocol')
-
-      local on_attach = function(client, bufnr)
-
-        -- Format on save
-        if client.server_capabilities.documentFormattingProvider then
-          vim.api.nvim_create_autocmd("BufWritePre", {
-            group = vim.api.nvim_create_augroup("LspFormatting", { clear = true }),
-            buffer = bufnr,
-            callback = function()
-              vim.lsp.buf.format({ async = true })
-            end,
-          })
-        end
-      end
-      -- pylsp setup
-      require('lspconfig').pylsp.setup {
-          cmd = { "pylsp" },
-          filetypes = { "python" },
-          settings = {
-              pylsp = {
-                  plugins = {
-                      pyflakes = { enabled = true },
-                      pycodestyle = { enabled = true },
-                  },
-              },
-          },
-      }
       -- Ruff setup
       require('lspconfig').ruff.setup({
+        on_attach = function(client, bufnr) 
+          -- Format on save
+          if client.server_capabilities.documentFormattingProvider then
+            vim.api.nvim_create_autocmd("BufWritePre", {
+              group = vim.api.nvim_create_augroup("LspFormatting", { clear = true }),
+              buffer = bufnr,
+              callback = function()
+                vim.lsp.buf.format({ async = true })
+              end,
+            })
+          end
+        end,
         init_options = {
           settings = {
             ruff = {
@@ -46,6 +24,7 @@ return {
                 enable = true,
                 onOpen = true,
                 onSave = true,
+                ignore = { "W291", "E501", "E402" },  --whitespace after comma and long line string
               },
               format = {
                 enable = true,
@@ -57,7 +36,7 @@ return {
         },
       })
       -- TypeScript Server Setup
-      nvim_lsp.ts_ls.setup({
+      require('lspconfig').ts_ls.setup({
         on_attach = on_attach,
         filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
         cmd = { "typescript-language-server", "--stdio" },

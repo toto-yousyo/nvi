@@ -34,6 +34,8 @@ telescope.setup {
         -- your custom insert mode mappings
         ["i"] = {
           ["<C-w>"] = function() vim.cmd('normal vbd') end,
+          ["<C-r>"] = fb_actions.toggle_hidden, 
+          ["<C-h>"] = fb_actions.backspace
         },
         ["n"] = {
           -- your custom normal mode mappings
