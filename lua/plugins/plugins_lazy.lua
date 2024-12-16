@@ -261,6 +261,7 @@ return {
     },
   },
 },
+-- ysiw<> you want surrpund signature
 {
   "kylechui/nvim-surround",
   version = "*", -- Use for stability; omit to use `main` branch for the latest features
@@ -401,5 +402,8 @@ return {
       direction = 'float',
       close_on_exit = true,
     }
-}
+}, 
+-- Select in visualmode, select you want replace words and 'gr'
+{'vim-scripts/ReplaceWithRegister'}
+
 }
