@@ -40,16 +40,12 @@ return {
       local configs = require("nvim-treesitter.configs")
       configs.setup({
           ensure_installed = {
-              "awk",
               "bash",
               "comment",
-              "c",
               "css",
               "csv",
               "diff",
-              "gpg",
               "html",
-              "htmldjango",
               "javascript",
               "json",
               "lua",
@@ -57,7 +53,6 @@ return {
               "python",
               "rust",
               "sql",
-              "ssh_config",
               "tmux",
               "toml",
               "vim",
@@ -172,7 +167,6 @@ return {
             "typescriptreact",
             "json",
             "scss",
-            "less",
             "python"
           }
         }
@@ -180,7 +174,7 @@ return {
 }, 
 {
   "williamboman/mason.nvim", 
-  opts = { ensure_installed = { "markdownlint-cli2", "markdown-toc" } }, 
+  opts = { ensure_installed = { "ruff" } }, 
 }, 
 {"williamboman/mason-lspconfig.nvim"},
 {"neovim/nvim-lspconfig"}, 
@@ -204,14 +198,14 @@ return {
   ---@type ibl.config
   opts = {},
 }, 
-{
-  "vhyrro/luarocks.nvim", 
-  priority = 1001, 
-  opts = {
- --     rocks = { "magick" }, 
-  }, 
-  config = true, 
-}, 
+--{
+--  "vhyrro/luarocks.nvim", 
+--  priority = 1001, 
+--  opts = {
+--     rocks = { "magick" }, 
+--  }, 
+--  config = true, 
+--}, 
 
 {"stevearc/dressing.nvim", opts = {}},  
  

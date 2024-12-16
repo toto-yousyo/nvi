@@ -216,8 +216,8 @@ DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-03 Tue 08:49]
 * DONE :
   CLOSED: [2024-12-03 Tue 16:56]
   [2024-12-02 Mon]
-* TODO 新規会員登録で変に移動しない変更up
-  DEADLINE: <2024-12-10 Tue>
+* DONE 新規会員登録で変に移動しない変更up
+  DEADLINE: <2024-12-10 Tue> CLOSED: [2024-12-16 Mon 18:06]
   [2024-12-02 Mon]
 
   [2024-12-03 Tue]
@@ -261,8 +261,8 @@ DEADLINE: <2024-12-02 Mon> CLOSED: [2024-12-03 Tue 08:49]
 * DONE 2409 20入り箱１３seat ート
   DEADLINE: <2024-12-09 Mon> CLOSED: [2024-12-09 Mon 10:44]
   [2024-12-06 Fri]
-* TODO 「冬の販促DM_後追いメール(3回目)」
-  DEADLINE: <2024-12-13 Fri>
+* DONE 「冬の販促DM_後追いメール(3回目)」
+  DEADLINE: <2024-12-13 Fri> CLOSED: [2024-12-16 Mon 18:06]
 12/19(木)に配信予定です。
 制作をお願いいたします。
   [2024-12-10 Tue]
@@ -299,3 +299,34 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
 * TODO メールを送る
   DEADLINE: <2024-12-13 Fri>
   [2024-12-13 Fri]
+* DONE 年末年水の分m、下にずれている
+  DEADLINE: <2024-12-16 Mon> CLOSED: [2024-12-16 Mon 18:06]
+  [2024-12-16 Mon]
+* DONE 楽天を入れてデータベースを更新できる形にする
+  DEADLINE: <2024-12-16 Mon> CLOSED: [2024-12-16 Mon 18:07]
+  [2024-12-16 Mon]
+* DONE 定期購入ページのリンクを作成する、。ご利用ガイドについか
+  DEADLINE: <2024-12-16 Mon> CLOSED: [2024-12-16 Mon 18:07]
+  [2024-12-16 Mon]
+* DONE プロフィールのところに行動のものを追加する
+  DEADLINE: <2024-12-16 Mon> CLOSED: [2024-12-16 Mon 16:20]
+  [2024-12-16 Mon]
+* TODO ポイントで検索した時にタイトルが検索対象になっていないようだった
+  DEADLINE: <2024-12-16 Mon>
+  [2024-12-16 Mon]
+* TODO コスメキッチンさんのクローズのお知らせが来ています。
+  DEADLINE: <2025-01-13 Mon>
+
+コスメキッチン
+マークイズみなとみらい
+	
+クローズ日：2025年1月13日
+
+※日にちが来ましたら、LISTから
+  [2024-12-16 Mon]
+* TODO プロフィールの写真は写真だけにする
+  DEADLINE: <2024-12-17 Tue>
+  [2024-12-16 Mon]
+* TODO ポイントの文字で検索ヒットしない
+  DEADLINE: <2024-12-17 Tue>
+  [2024-12-16 Mon]
