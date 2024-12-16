@@ -30,7 +30,7 @@ keymap("n", "gl", "gt", opts)
 keymap("n", "ss", ":split<Return><C-w>w", opts)
 keymap("n", "sv", ":vsplit<Return><C-w>w", opts)
 
-keymap("n", "<ca>", "gg<S-v>G", opts)
+keymap("n", "ca", "gg<S-v>G", opts)
 
 -- Do not pass to clipboard
 -- keymap("n", "x", '"_x', opts)
@@ -72,26 +72,26 @@ vim.api.nvim_set_keymap('n', '<leader>ccc', ':CopilotChat<CR>', { noremap = true
 -- 置き換えられた方のテキストはブラックホールレジスタに入る
 vim.keymap.set("v", "p", '"_dP', opts)
 -- バッファの内容全体を使って Copilot とチャットする
-function CopilotChatBuffer()
-  local input = vim.fn.input("Quick Chat: ")
-  if input ~= "" then
-    require("CopilotChat").ask(input, { selection = require("CopilotChat.select").buffer })
-  end
-end
+--function CopilotChatBuffer()
+--  local input = vim.fn.input("Quick Chat: ")
+--  if input ~= "" then
+--    require("CopilotChat").ask(input, { selection = require("CopilotChat.select").buffer })
+--  end
+--end
+--
+---- <leader>ccq (Copilot Chat Quick) で Copilot とチャットする
+--vim.api.nvim_set_keymap("n", "<leader>ccq", "<cmd>lua CopilotChatBuffer()<cr>", { noremap = true, silent = true })
 
--- <leader>ccq (Copilot Chat Quick) で Copilot とチャットする
-vim.api.nvim_set_keymap("n", "<leader>ccq", "<cmd>lua CopilotChatBuffer()<cr>", { noremap = true, silent = true })
 
-
--- telescope を使ってアクションプロンプトを表示する
-function ShowCopilotChatActionPrompt()
-  local actions = require("CopilotChat.actions")
-  require("CopilotChat.integrations.telescope").pick(actions.prompt_actions())
-end
+---- telescope を使ってアクションプロンプトを表示する
+--function ShowCopilotChatActionPrompt()
+--  local actions = require("CopilotChat.actions")
+--  require("CopilotChat.integrations.telescope").pick(actions.prompt_actions())
+--end
 
 -- キーマッピング
 -- <leader>ccp (Copilot Chat Prompt の略) でアクションプロンプトを表示する
-vim.api.nvim_set_keymap("n", "<leader>ccp", "<cmd>lua ShowCopilotChatActionPrompt()<cr>", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("n", "<leader>ccp", "<cmd>lua ShowCopilotChatActionPrompt()<cr>", { noremap = true, silent = true })
 
 vim.keymap.set('i', '<C-L>', '<Plug>(copilot-accept-word)')
 -- ウィンドウの高さを増加

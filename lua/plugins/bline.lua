@@ -11,7 +11,7 @@ return {
        }, 
     })
 
-    vim.keymap.set('n', '<C-t>', '<Cmd>BufferLineCycleNext<CR>', {})
+   -- vim.keymap.set('n', '<C-t>', '<Cmd>BufferLineCycleNext<CR>', {})
   end 
   } 
 }
