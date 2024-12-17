@@ -311,8 +311,8 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
 * DONE プロフィールのところに行動のものを追加する
   DEADLINE: <2024-12-16 Mon> CLOSED: [2024-12-16 Mon 16:20]
   [2024-12-16 Mon]
-* TODO ポイントで検索した時にタイトルが検索対象になっていないようだった
-  DEADLINE: <2024-12-16 Mon>
+* DONE ポイントで検索した時にタイトルが検索対象になっていないようだった
+  DEADLINE: <2024-12-16 Mon> CLOSED: [2024-12-17 Tue 10:52]
   [2024-12-16 Mon]
 * TODO コスメキッチンさんのクローズのお知らせが来ています。
   DEADLINE: <2025-01-13 Mon>
@@ -327,6 +327,6 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
 * TODO プロフィールの写真は写真だけにする
   DEADLINE: <2024-12-17 Tue>
   [2024-12-16 Mon]
-* TODO ポイントの文字で検索ヒットしない
-  DEADLINE: <2024-12-17 Tue>
+* DONE ポイントの文字で検索ヒットしない
+  DEADLINE: <2024-12-17 Tue> CLOSED: [2024-12-17 Tue 10:52]
   [2024-12-16 Mon]
