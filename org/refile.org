@@ -330,3 +330,6 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
 * DONE ポイントの文字で検索ヒットしない
   DEADLINE: <2024-12-17 Tue> CLOSED: [2024-12-17 Tue 10:52]
   [2024-12-16 Mon]
+* TODO ko個人計画表提出
+  DEADLINE: <2024-12-20 Fri>
+  [2024-12-19 Thu]
