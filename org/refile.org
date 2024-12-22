@@ -333,3 +333,9 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
 * DONE ko個人計画表提出
   DEADLINE: <2024-12-20 Fri> CLOSED: [2024-12-20 Fri 13:51]
   [2024-12-19 Thu]
+* TODO LEDチラシの変更
+  DEADLINE: <2024-12-23 Mon>
+  [2024-12-21 Sat]
+* TODO 雑誌ar追加
+  DEADLINE: <2024-12-23 Mon>
+  [2024-12-21 Sat]
