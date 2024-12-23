@@ -333,9 +333,33 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
 * DONE ko個人計画表提出
   DEADLINE: <2024-12-20 Fri> CLOSED: [2024-12-20 Fri 13:51]
   [2024-12-19 Thu]
-* TODO LEDチラシの変更
-  DEADLINE: <2024-12-23 Mon>
+* DONE LEDチラシの変更
+  DEADLINE: <2024-12-23 Mon> CLOSED: [2024-12-23 Mon 09:45]
   [2024-12-21 Sat]
-* TODO 雑誌ar追加
-  DEADLINE: <2024-12-23 Mon>
+* DONE 雑誌ar追加
+  DEADLINE: <2024-12-23 Mon> CLOSED: [2024-12-23 Mon 09:45]
   [2024-12-21 Sat]
+* TODO 経営計画書の表紙だけを１まい出dす
+  DEADLINE: <2024-12-26 Thu>
+  [2024-12-23 Mon]
+* TODO LED300部印刷出す
+  DEADLINE: <2024-12-23 Mon>
+  [2024-12-23 Mon]
+* TODO second sliderリンクの場所を変更
+  DEADLINE: <2024-12-23 Mon>
+  [2024-12-23 Mon]
+* TODO 肥田さんの画像にアフロ
+  DEADLINE: <2024-12-23 Mon>
+  [2024-12-23 Mon]
+* TODO 副社長のチラシ３００印刷
+  DEADLINE: <2024-12-24 Tue>
+  [2024-12-23 Mon]
+* TODO 松もとさんと斉藤さんの画像を切り取り
+  DEADLINE: <2024-12-23 Mon>
+  [2024-12-23 Mon]
+* TODO 押したさんの文章を追加
+  DEADLINE: <2024-12-23 Mon>
+  [2024-12-23 Mon]
+* TODO テキストをもう少しだけ大ききく
+  DEADLINE: <2024-12-24 Tue>
+  [2024-12-23 Mon]
