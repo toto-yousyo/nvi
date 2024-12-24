@@ -339,27 +339,40 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
 * DONE 雑誌ar追加
   DEADLINE: <2024-12-23 Mon> CLOSED: [2024-12-23 Mon 09:45]
   [2024-12-21 Sat]
-* TODO 経営計画書の表紙だけを１まい出dす
-  DEADLINE: <2024-12-26 Thu>
+* DONE 経営計画書の表紙だけを１まい出dす
+  DEADLINE: <2024-12-26 Thu> CLOSED: [2024-12-24 Tue 11:47]
   [2024-12-23 Mon]
-* TODO LED300部印刷出す
-  DEADLINE: <2024-12-23 Mon>
+* DONE LED300部印刷出す
+  DEADLINE: <2024-12-23 Mon> CLOSED: [2024-12-24 Tue 11:37]
   [2024-12-23 Mon]
 * TODO second sliderリンクの場所を変更
   DEADLINE: <2024-12-23 Mon>
   [2024-12-23 Mon]
-* TODO 肥田さんの画像にアフロ
-  DEADLINE: <2024-12-23 Mon>
+* DONE 肥田さんの画像にアフロ
+  DEADLINE: <2024-12-23 Mon> CLOSED: [2024-12-24 Tue 11:37]
   [2024-12-23 Mon]
-* TODO 副社長のチラシ３００印刷
-  DEADLINE: <2024-12-24 Tue>
+* DONE 副社長のチラシ３００印刷
+  DEADLINE: <2024-12-24 Tue> CLOSED: [2024-12-24 Tue 11:37]
   [2024-12-23 Mon]
-* TODO 松もとさんと斉藤さんの画像を切り取り
-  DEADLINE: <2024-12-23 Mon>
+* DONE 松もとさんと斉藤さんの画像を切り取り
+  DEADLINE: <2024-12-23 Mon> CLOSED: [2024-12-24 Tue 11:37]
   [2024-12-23 Mon]
-* TODO 押したさんの文章を追加
-  DEADLINE: <2024-12-23 Mon>
+* DONE 押したさんの文章を追加
+  DEADLINE: <2024-12-23 Mon> CLOSED: [2024-12-24 Tue 11:37]
   [2024-12-23 Mon]
-* TODO テキストをもう少しだけ大ききく
-  DEADLINE: <2024-12-24 Tue>
+* DONE テキストをもう少しだけ大ききく
+  DEADLINE: <2024-12-24 Tue> CLOSED: [2024-12-24 Tue 11:37]
   [2024-12-23 Mon]
+* TODO ベルナチュレール様（新宿高島屋、京都高島屋）の取扱開始が1/15〜
+  DEADLINE: <2025-01-15 Wed>
+  [2024-12-24 Tue]
+* TODO 個人の行動計画は各部署のh人ずつのものを各部署で渡すい
+  DEADLINE: <2024-12-25 Wed>
+  [2024-12-24 Tue]
+* TODO 計画表を印刷する
+  DEADLINE: <2024-12-25 Wed>
+  [2024-12-24 Tue]
+* TODO 尾下さんと雨谷さんの入社念げつ調べる
+  DEADLINE: <2024-12-25 Wed>
+  [2024-12-24 Tue]
+  
