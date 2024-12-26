@@ -366,13 +366,18 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
 * TODO ベルナチュレール様（新宿高島屋、京都高島屋）の取扱開始が1/15〜
   DEADLINE: <2025-01-15 Wed>
   [2024-12-24 Tue]
-* TODO 個人の行動計画は各部署のh人ずつのものを各部署で渡すい
-  DEADLINE: <2024-12-25 Wed>
+* DONE 個人の行動計画は各部署のh人ずつのものを各部署で渡すい
+  DEADLINE: <2024-12-25 Wed> CLOSED: [2024-12-26 Thu 11:00]
   [2024-12-24 Tue]
-* TODO 計画表を印刷する
-  DEADLINE: <2024-12-25 Wed>
+* DONE 計画表を印刷する
+  DEADLINE: <2024-12-25 Wed> CLOSED: [2024-12-26 Thu 11:00]
   [2024-12-24 Tue]
-* TODO 尾下さんと雨谷さんの入社念げつ調べる
-  DEADLINE: <2024-12-25 Wed>
+* DONE 尾下さんと雨谷さんの入社念げつ調べる
+  DEADLINE: <2024-12-25 Wed> CLOSED: [2024-12-26 Thu 09:18]
   [2024-12-24 Tue]
-  
+* TODO メディア情報のリンクを削除していく
+  DEADLINE: <2024-12-27 Fri>
+  [2024-12-26 Thu]
+* TODO instaのリンクが聞くようにする
+  DEADLINE: <2024-12-27 Fri>
+  [2024-12-26 Thu]
