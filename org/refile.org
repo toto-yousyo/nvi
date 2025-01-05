@@ -385,3 +385,5 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
   [2024-12-27 Fri]
 * TODO 勤怠申請の他の月も権限設定をするように
   [2024-12-27 Fri]
+* TODO dark modeの色がコントロールできない
+  [2025-01-05 Sun]
