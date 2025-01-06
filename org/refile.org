@@ -103,8 +103,8 @@ DEADLINE: <2024-12-10 Tue>
 * DONE 社長からの修正スライダー
   DEADLINE: <2024-11-27 Wed> CLOSED: [2024-11-27 Wed 11:47]
   [2024-11-26 Tue]
-* TODO 2784のページを下ろす
-  DEADLINE: <2024-12-27 Fri>
+* DONE 2784のページを下ろす
+  DEADLINE: <2024-12-27 Fri> CLOSED: [2025-01-06 Mon 08:48]
   https://aotsubu.co.jp/lp?u=2784
   [2024-11-27 Wed]
 * DONE ショップリストの更新と修正をする
@@ -375,11 +375,11 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
 * DONE 尾下さんと雨谷さんの入社念げつ調べる
   DEADLINE: <2024-12-25 Wed> CLOSED: [2024-12-26 Thu 09:18]
   [2024-12-24 Tue]
-* TODO メディア情報のリンクを削除していく
-  DEADLINE: <2024-12-27 Fri>
+* DONE メディア情報のリンクを削除していく
+  DEADLINE: <2024-12-27 Fri> CLOSED: [2025-01-06 Mon 08:49]
   [2024-12-26 Thu]
-* TODO instaのリンクが聞くようにする
-  DEADLINE: <2024-12-27 Fri>
+* DONE instaのリンクが聞くようにする
+  DEADLINE: <2024-12-27 Fri> CLOSED: [2025-01-06 Mon 09:54]
   [2024-12-26 Thu]
 * TODO 新規でご注文の際のアンケートで、インスタやYouTubeを見てご購入してくださったと選択していただけますが、誰のSNSで、をもっと入力していただけるようなものに変更をしていただけますでしょうか。急ぎではないです。お時間あるときにお願いいたします。
   [2024-12-27 Fri]
@@ -387,3 +387,21 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
   [2024-12-27 Fri]
 * TODO dark modeの色がコントロールできない
   [2025-01-05 Sun]
+* DONE LED印刷する
+  CLOSED: [2025-01-06 Mon 09:54]
+  [2025-01-06 Mon]
+* DONE 計測月末のする
+  CLOSED: [2025-01-06 Mon 16:33]
+  [2025-01-06 Mon]
+* DONE 棚卸をする
+  CLOSED: [2025-01-06 Mon 10:36]
+  [2025-01-06 Mon]
+* DONE 年末年始の案内を下げる
+  CLOSED: [2025-01-06 Mon 09:54]
+  [2025-01-06 Mon]
+* TODO プロフィルノ印刷まだのものを印刷sる
+  [2025-01-06 Mon]
+* TODO souldoutaさんの請求うしょ
+  [2025-01-06 Mon]
+* TODO 書籍をみて、。が多い
+  [2025-01-06 Mon]
