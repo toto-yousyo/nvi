@@ -381,7 +381,8 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
 * DONE instaのリンクが聞くようにする
   DEADLINE: <2024-12-27 Fri> CLOSED: [2025-01-06 Mon 09:54]
   [2024-12-26 Thu]
-* TODO 新規でご注文の際のアンケートで、インスタやYouTubeを見てご購入してくださったと選択していただけますが、誰のSNSで、をもっと入力していただけるようなものに変更をしていただけますでしょうか。急ぎではないです。お時間あるときにお願いいたします。
+* DONE 新規でご注文の際のアンケートで、インスタやYouTubeを見てご購入してくださったと選択していただけますが、誰のSNSで、をもっと入力していただけるようなものに変更をしていただけますでしょうか。急ぎではないです。お時間あるときにお願いいたします。
+  CLOSED: [2025-01-07 Tue 14:25]
   [2024-12-27 Fri]
 * TODO 勤怠申請の他の月も権限設定をするように
   [2024-12-27 Fri]
@@ -403,5 +404,24 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
   [2025-01-06 Mon]
 * TODO souldoutaさんの請求うしょ
   [2025-01-06 Mon]
-* TODO 書籍をみて、。が多い
+* DONE 書籍をみて、。が多い
+  CLOSED: [2025-01-07 Tue 08:46]
   [2025-01-06 Mon]
+* DONE 以下のパネル（6枚）の中の「あおつぶLINE UP」について
+  CLOSED: [2025-01-07 Tue 10:11]
+①14包、42包、75包の3商品
+②14包、42包の2商品
+のデータを作成し、入れ替えていただき、まとめてＰＤＦデータ（パネル7枚）にして私に返信いただけませんか？
+  [2025-01-07 Tue]
+* TODO topの固定をかいじょ
+  [2025-01-07 Tue]
+* TODO 神田さんのプレゼント
+  [2025-01-07 Tue]
+* TODO 製造の３人の名前をリストに入れて更新
+  [2025-01-07 Tue]
+* TODO 
+  [2025-01-07 Tue]
+* TODO 雑誌 CanCam 2月号の情報を追加しました
+ニュース一覧へのアップをお願いいたします
+https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/edit?usp=sharin
+  [2025-01-07 Tue]
