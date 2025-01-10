@@ -314,8 +314,8 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
 * DONE ポイントで検索した時にタイトルが検索対象になっていないようだった
   DEADLINE: <2024-12-16 Mon> CLOSED: [2024-12-17 Tue 10:52]
   [2024-12-16 Mon]
-* TODO コスメキッチンさんのクローズのお知らせが来ています。
-  DEADLINE: <2025-01-13 Mon>
+* DONE コスメキッチンさんのクローズのお知らせが来ています。
+  DEADLINE: <2025-01-13 Mon> CLOSED: [2025-01-10 Fri 14:11]
 
 コスメキッチン
 マークイズみなとみらい
@@ -345,8 +345,8 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
 * DONE LED300部印刷出す
   DEADLINE: <2024-12-23 Mon> CLOSED: [2024-12-24 Tue 11:37]
   [2024-12-23 Mon]
-* TODO second sliderリンクの場所を変更
-  DEADLINE: <2024-12-23 Mon>
+* DONE second sliderリンクの場所を変更
+  DEADLINE: <2024-12-23 Mon> CLOSED: [2025-01-10 Fri 14:11]
   [2024-12-23 Mon]
 * DONE 肥田さんの画像にアフロ
   DEADLINE: <2024-12-23 Mon> CLOSED: [2024-12-24 Tue 11:37]
@@ -402,7 +402,8 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
   [2025-01-06 Mon]
 * TODO プロフィルノ印刷まだのものを印刷sる
   [2025-01-06 Mon]
-* TODO souldoutaさんの請求うしょ
+* DONE souldoutaさんの請求うしょ
+  CLOSED: [2025-01-10 Fri 14:11]
   [2025-01-06 Mon]
 * DONE 書籍をみて、。が多い
   CLOSED: [2025-01-07 Tue 08:46]
@@ -417,9 +418,11 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
   [2025-01-07 Tue]
 * TODO 神田さんのプレゼント
   [2025-01-07 Tue]
-* TODO 製造の３人の名前をリストに入れて更新
+* DONE 製造の３人の名前をリストに入れて更新
+  CLOSED: [2025-01-10 Fri 14:04]
   [2025-01-07 Tue]
-* TODO 
+* DONE 
+  CLOSED: [2025-01-10 Fri 14:04]
   [2025-01-07 Tue]
 * TODO 雑誌 CanCam 2月号の情報を追加しました
 ニュース一覧へのアップをお願いいたします
