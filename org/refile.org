@@ -384,7 +384,8 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
 * DONE 新規でご注文の際のアンケートで、インスタやYouTubeを見てご購入してくださったと選択していただけますが、誰のSNSで、をもっと入力していただけるようなものに変更をしていただけますでしょうか。急ぎではないです。お時間あるときにお願いいたします。
   CLOSED: [2025-01-07 Tue 14:25]
   [2024-12-27 Fri]
-* TODO 勤怠申請の他の月も権限設定をするように
+* DONE 勤怠申請の他の月も権限設定をするように
+  CLOSED: [2025-01-11 Sat 17:43]
   [2024-12-27 Fri]
 * TODO dark modeの色がコントロールできない
   [2025-01-05 Sun]
