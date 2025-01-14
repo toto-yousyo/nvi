@@ -387,7 +387,8 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
 * DONE 勤怠申請の他の月も権限設定をするように
   CLOSED: [2025-01-11 Sat 17:43]
   [2024-12-27 Fri]
-* TODO dark modeの色がコントロールできない
+* DONE dark modeの色がコントロールできない
+  CLOSED: [2025-01-14 Tue 10:50]
   [2025-01-05 Sun]
 * DONE LED印刷する
   CLOSED: [2025-01-06 Mon 09:54]
@@ -417,7 +418,8 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
   [2025-01-07 Tue]
 * TODO topの固定をかいじょ
   [2025-01-07 Tue]
-* TODO 神田さんのプレゼント
+* DONE 神田さんのプレゼント
+  CLOSED: [2025-01-14 Tue 10:51]
   [2025-01-07 Tue]
 * DONE 製造の３人の名前をリストに入れて更新
   CLOSED: [2025-01-10 Fri 14:04]
@@ -425,9 +427,29 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
 * DONE 
   CLOSED: [2025-01-10 Fri 14:04]
   [2025-01-07 Tue]
-* TODO 雑誌 CanCam 2月号の情報を追加しました
+* DONE 雑誌 CanCam 2月号の情報を追加しました
+  CLOSED: [2025-01-14 Tue 10:50]
 ニュース一覧へのアップをお願いいたします
 https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/edit?usp=sharin
   [2025-01-07 Tue]
-* TODO サンエスさん出荷　1/14
+* DONE サンエスさん出荷　1/14
+  CLOSED: [2025-01-14 Tue 10:50]
   [2025-01-09 Thu]
+* TODO あおつぶ２個セットの下に表示されるようにする
+  HPのあおつぶボトル1本の商品ページに入ると、下の方に「その他ラインナップ」が表示されます。
+
+最初に表示される商品が「あおつぶボトル2本セット」になるように調整できますでしょうか。
+
+同じく「パック1箱」のページは「2箱セット」、「2箱セット」は「3箱セット」、「詰替用750」は「詰替用1550粒」、「詰替用1550粒」は「詰替用1550粒×2袋」等のように
+1つ大きい商品が表示されると良いです！
+  [2025-01-14 Tue]
+* TODO 詰替用1550粒
+
+→粒数もお得な詰替用
+
+詰替用1550粒×2袋
+
+→粒数もお得な2袋セット
+  [2025-01-14 Tue]
+* TODO 就職説明会のもの
+  [2025-01-14 Tue]
