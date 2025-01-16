@@ -363,8 +363,8 @@ https://docs.google.com/document/d/19VEvazoLrSVau6vBzbKFwuWGh05x9eQq3zg_QlGXI9M/
 * DONE テキストをもう少しだけ大ききく
   DEADLINE: <2024-12-24 Tue> CLOSED: [2024-12-24 Tue 11:37]
   [2024-12-23 Mon]
-* TODO ベルナチュレール様（新宿高島屋、京都高島屋）の取扱開始が1/15〜
-  DEADLINE: <2025-01-15 Wed>
+* DONE ベルナチュレール様（新宿高島屋、京都高島屋）の取扱開始が1/15〜
+  DEADLINE: <2025-01-15 Wed> CLOSED: [2025-01-16 Thu 16:57]
   [2024-12-24 Tue]
 * DONE 個人の行動計画は各部署のh人ずつのものを各部署で渡すい
   DEADLINE: <2024-12-25 Wed> CLOSED: [2024-12-26 Thu 11:00]
@@ -455,3 +455,7 @@ https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/
   [2025-01-14 Tue]
 * TODO profile顧問のヴンを印刷しておく
   [2025-01-15 Wed]
+* TODO 特になし
+  [2025-01-16 Thu]
+* TODO bookletのPCを作成する
+  [2025-01-16 Thu]
