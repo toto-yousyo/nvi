@@ -473,9 +473,10 @@ https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/
   [2025-01-17 Fri]
 * TODO 募集ページを作成する
   [2025-01-17 Fri]
-* TODO お客さまの声をルーティンで変更していく
+* DONE お客さまの声をルーティンで変更していく
+  CLOSED: [2025-01-23 Thu 10:04]
   [2025-01-17 Fri]
-* TODO 初めての人はこちらボタンを通常のページにも追加
+* DOING 初めての人はこちらボタンを通常のページにも追加
   [2025-01-17 Fri]
 * DONE 高の原すずらん館店掲載
   CLOSED: [2025-01-17 Fri 15:10]
@@ -533,3 +534,5 @@ https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/
   [2025-01-22 Wed]
 * TODO 父のひ母の日企画
   [2025-01-22 Wed]
+* TODO 複数個のボタンが推せるのがわかりにいくい
+  [2025-01-23 Thu]
