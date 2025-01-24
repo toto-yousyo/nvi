@@ -47,6 +47,8 @@ return {
               "diff",
               "html",
               "javascript",
+              "typescript", 
+              "tsx", 
               "json",
               "lua",
               "markdown",
@@ -61,10 +63,14 @@ return {
               "regex",
               "vimdoc",
           },
-          sync_install = false,
-          auto_install = true,
- --         highlight = { enable = true },
-          indent = { enable = true },
+        contenxt_commentstring = {
+          enabel = true, 
+          enabel_autocmd = false, 
+        }, 
+        sync_install = false,
+        auto_install = true,
+--         highlight = { enable = true },
+        indent = { enable = true },
       })
   end,
 },
@@ -415,6 +421,22 @@ return {
     }
 }, 
 -- Select in visualmode, select you want replace words and 'gr'
-{'vim-scripts/ReplaceWithRegister'}
+{'vim-scripts/ReplaceWithRegister'}, 
+-- For Commentout
+{
+  'numToStr/Comment.nvim',
+  config = function()
+    require('Comment').setup()
+    end, 
+}, 
+-- For Commentout on React-TypeScript
+{
+  'JoosepAlviste/nvim-ts-context-commentstring',  
+  config = function()
+  require('Comment').setup{
+    pre_hook = require('ts_context_commentstring.integrations.comment_nvim').create_pre_hook(),
+  }
+  end, 
+}
 
 }
