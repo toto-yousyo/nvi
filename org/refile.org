@@ -540,3 +540,5 @@ https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/
   [2025-01-23 Thu]
 * TODO スケジュールを作成する
   [2025-01-24 Fri]
+* TODO LP神田さんのを商品登録す
+  [2025-01-27 Mon]
