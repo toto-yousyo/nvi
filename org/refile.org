@@ -21,8 +21,8 @@
 * DONE LED王子回生病院に送る
   DEADLINE: <2024-11-15 Fri> CLOSED: [2024-11-15 Fri 09:31]
   [2024-11-15 Fri]
-* TODO 100粒の購入画面に非表示にできるかどうか
-DEADLINE: <2024-12-06 Fri>
+* DONE 100粒の購入画面に非表示にできるかどうか
+DEADLINE: <2024-12-06 Fri> CLOSED: [2025-01-29 Wed 13:59]
   [2024-11-21 Thu]
 * DONE メールの設定をする
   CLOSED: [2024-11-21 Thu 14:20]
@@ -469,14 +469,17 @@ https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/
 * DONE ファストスライダの定期を入れて、ネバネバを削除する
   CLOSED: [2025-01-17 Fri 14:59]
   [2025-01-17 Fri]
-* TODO ２個セットを他の商品も設定していく
+* DONE ２個セットを他の商品も設定していく
+  CLOSED: [2025-01-29 Wed 13:59]
   [2025-01-17 Fri]
-* TODO 募集ページを作成する
+* DONE 募集ページを作成する
+  CLOSED: [2025-01-29 Wed 13:59]
   [2025-01-17 Fri]
 * DONE お客さまの声をルーティンで変更していく
   CLOSED: [2025-01-23 Thu 10:04]
   [2025-01-17 Fri]
-* DOING 初めての人はこちらボタンを通常のページにも追加
+* DONE 初めての人はこちらボタンを通常のページにも追加
+  CLOSED: [2025-01-29 Wed 14:00]
   [2025-01-17 Fri]
 * DONE 高の原すずらん館店掲載
   CLOSED: [2025-01-17 Fri 15:10]
