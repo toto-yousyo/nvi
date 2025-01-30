@@ -499,7 +499,8 @@ https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/
   CLOSED: [2025-01-21 Tue 10:23]
 お手数ですが、神田さんが出社されたタイミング問題ないですのでご確認をお願いします<m(__)m>
   [2025-01-20 Mon]
-* TODO coupoon QRコードじゅん日
+* DONE coupoon QRコードじゅん日
+  CLOSED: [2025-01-30 Thu 16:50]
   j
   [2025-01-20 Mon]
 * DONE プリオで入稿口準備していますので、入稿お願いします。
@@ -550,3 +551,8 @@ https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/
   [2025-01-27 Mon]
 * TODO 送料無料がわかりにくい 2789
   [2025-01-28 Tue]
+* TODO 注意事項ラベル残り100シートを切りました。
+ご発注お願い申し上げます。
+注意事項ラベル残り100シートを切りました。
+ご発注お願い申し上げます。
+  [2025-01-30 Thu]
