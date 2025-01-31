@@ -556,3 +556,17 @@ https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/
 注意事項ラベル残り100シートを切りました。
 ご発注お願い申し上げます。
   [2025-01-30 Thu]
+* TODO Foogle広告おを副社長に送る
+  DEADLINE: <2025-02-05 Wed>
+  [2025-01-31 Fri]
+* TODO ラインナップのところを変更する商品名
+  [2025-01-31 Fri]
+* TODO 基板を出荷するg月曜日
+  DEADLINE: <2025-02-03 Mon>
+  [2025-01-31 Fri]
+* TODO 棚おろしする
+  DEADLINE: <2025-02-03 Mon>
+  [2025-01-31 Fri]
+* TODO 就職説明回を印刷する
+  DEADLINE: <2025-02-03 Mon>
+  [2025-01-31 Fri]
