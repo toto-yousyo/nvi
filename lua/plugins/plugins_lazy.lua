@@ -385,6 +385,15 @@ return {
   ft = { 'org'},
   config = function()
     require('orgmode').setup({
+      org = {
+        link = {
+          -- 画像リンクを開く時にmacのプレビューを使用
+          open = function(path)
+            -- macのopenコマンドを使用してデフォルトアプリを開く
+              vim.fn.jobstart({'open', path}, {detach = true})
+          end, 
+        }, 
+      }, 
       org_agenda_files = {'~/.config/nvim/org/*'},
       org_default_notes_file = '~/.config/nvim/org/refile.org',
       org_hide_emphasis_markers = true,

@@ -47,6 +47,9 @@ vim.api.nvim_set_keymap(
   '<cmd>lua require("notify").dismiss()<CR>', 
   { noremap = true, silent = true }
 )
+--disable netrw
+vim.api.nvim_set_var('loaded_netrw', 1)
+vim.api.nvim_set_var('loaded_netrwPlugin', 1)
 
 -- toggleterm plus lazygit
 local Terminal = require("toggleterm.terminal").Terminal
