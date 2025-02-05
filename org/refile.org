@@ -556,13 +556,14 @@ https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/
 注意事項ラベル残り100シートを切りました。
 ご発注お願い申し上げます。
   [2025-01-30 Thu]
-* TODO Foogle広告おを副社長に送る
-  DEADLINE: <2025-02-05 Wed>
+* DONE Foogle広告おを副社長に送る
+  DEADLINE: <2025-02-05 Wed> CLOSED: [2025-02-05 Wed 14:05]
   [2025-01-31 Fri]
-* TODO ラインナップのところを変更する商品名
+* DONE ラインナップのところを変更する商品名
+  CLOSED: [2025-02-05 Wed 14:01]
   [2025-01-31 Fri]
-* TODO 基板とパッキンを出荷するg月曜日
-  DEADLINE: <2025-02-03 Mon>
+* DONE 基板とパッキンを出荷するg月曜日
+  DEADLINE: <2025-02-03 Mon> CLOSED: [2025-02-05 Wed 14:01]
   [2025-01-31 Fri]
 * DONE 棚おろしする
   DEADLINE: <2025-02-03 Mon> CLOSED: [2025-02-03 Mon 09:52]
@@ -580,7 +581,8 @@ https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/
   [2025-02-03 Mon]
 * TODO orgで画像を見れるように、開けるようにする
   [2025-02-03 Mon]
-* TODO 新規ポータルページ飲みほん作成
+* DONE 新規ポータルページ飲みほん作成
+  CLOSED: [2025-02-05 Wed 14:01]
   [2025-02-03 Mon]
 * DONE グラフをあおつぶの本をする時に見せる。２パターン入れる
   CLOSED: [2025-02-03 Mon 11:37]
@@ -604,4 +606,7 @@ https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/
 * TODO プロフィールシートを追加する
   [2025-02-04 Tue]
 * TODO amerikanFarmaxu, ,をショップリストのロゴリストに
+  [2025-02-05 Wed]
+* DONE カテゴリを変更したら、ナびやフッターを変更しないといけない
+  CLOSED: [2025-02-05 Wed 14:01]
   [2025-02-05 Wed]
