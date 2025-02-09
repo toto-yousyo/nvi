@@ -1,98 +1,105 @@
 return {
+  { "hrsh7th/cmp-nvim-lsp", lazy = true, event = { "InsertEnter", "CmdlineEnter" }  },
+  { "hrsh7th/cmp-buffer", lazy = true, event = { "InsertEnter", "CmdlineEnter" }  },
+  { "hrsh7th/cmp-path", lazy = true, event = { "InsertEnter", "CmdlineEnter" } },
+  { "hrsh7th/cmp-cmdline", lazy = true, event = { "InsertEnter", "CmdlineEnter" } },
+  { "saadparwaiz1/cmp_luasnip", lazy = true, event = { "InsertEnter", "CmdlineEnter" } },
+  { "L3MON4D3/LuaSnip", lazy = true, event = { "InsertEnter", "CmdlineEnter" } },
+  { "onsails/lspkind-nvim", lazy = true, event = { "InsertEnter", "CmdlineEnter" } },
   {
-    'hrsh7th/nvim-cmp',
+    "hrsh7th/nvim-cmp",
+    lazy = true,
+    event = { "InsertEnter", "CmdlineEnter" },
     config = function()
-    local cmp = require('cmp')
-    local lspkind = require('lspkind')
+      local cmp = require("cmp")
+      local luasnip = require("luasnip")
 
- cmp.setup({
-   snippet = {
-     expand = function(args)
-       vim.fn['vsnip#anonymous'](args.body)
-     end
-   },
+      cmp.setup({
+        preselect = cmp.PreselectMode.None,
+        formatting = {
+          format = require("lspkind").cmp_format {
+            mode = "symbol",
+            preset = "codicons",
+            symbol_map = {
+              Copilot = "",
+            }
+          }
+        },
+        snippet = {
+          expand = function(args)
+            require('luasnip').lsp_expand(args.body)
+          end,
+        },
+        mapping = cmp.mapping.preset.insert({
+          ['<C-b>'] = cmp.mapping.scroll_docs(-4),
+          ['<C-f>'] = cmp.mapping.scroll_docs(4),
+          ['<C-Space>'] = cmp.mapping.complete(),
+          ['<C-e>'] = cmp.mapping.abort(),
+          ['<CR>'] = cmp.mapping(function(fallback)
+            if cmp.visible() then
+              if luasnip.expandable() then
+                luasnip.expand()
+              else
+                cmp.confirm();
+              end
+            else
+              fallback()
+            end
+          end),
 
-   window = {
-      completion = cmp.config.window.bordered({
-        border = 'single'
-    }),
-      documentation = cmp.config.window.bordered({
-        border = 'single'
-    }),
-   },
+          ["<Tab>"] = cmp.mapping(function(fallback)
+            if cmp.visible() then
+              cmp.select_next_item()
+            elseif luasnip.locally_jumpable(1) then
+              luasnip.jump(1)
+            else
+              fallback()
+            end
+          end, { "i", "s" }),
 
-   mapping = cmp.mapping.preset.insert({
-     ['<Tab>'] = cmp.mapping.select_next_item(),
-     ['<S-Tab>'] = cmp.mapping.select_prev_item(),
-     ['<C-b>'] = cmp.mapping.scroll_docs(-4),
-     ['<C-f>'] = cmp.mapping.scroll_docs(4),
-     ['<C-Space>'] = cmp.mapping.complete(),
-     ['<C-e>'] = cmp.mapping.abort(),
-     ['<CR>'] = cmp.mapping.confirm({ select = true }),
-   }),
+          ["<S-Tab>"] = cmp.mapping(function(fallback)
+            if cmp.visible() then
+              cmp.select_prev_item()
+            elseif luasnip.locally_jumpable(-1) then
+              luasnip.jump(-1)
+            else
+              fallback()
+            end
+          end, { "i", "s" }),
 
- formatting = {
-	format = function(entry, item)				
-	local color_item = require("nvim-highlight-colors").format(entry, { kind = item.kind })
-	item = require("lspkind").cmp_format({
-		-- any lspkind format settings here
-	})(entry, item)
-	if color_item.abbr_hl_group then
-		item.kind_hl_group = color_item.abbr_hl_group
-		item.kind = color_item.abbr
-		end
-		return item
-                end
-  },
+        }),
+        sources = cmp.config.sources {
+          { name = 'luasnip' },
+          { name = 'nvim_lsp' },
+          { name = 'path' },
+          { name = 'buffer' },
+          { name = "copilot" },
+          { name = "tailwindcss" }
+        },
+      })
 
- sources = cmp.config.sources({
-   { name = 'nvim_lsp' },
-   { name = 'tailwindcss' },
-   { name = 'nvim_lsp_signature_help' },
-   { name = 'calc' },
-   { name = 'path' }, 
-   { name = 'orgmode' }, 
-  }, {
-   { name = 'buffer', keyword_length = 2 },
-  })
- })
+      -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
+      cmp.setup.cmdline({ '/', '?' }, {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = {
+          { name = 'buffer' }
+        }
+      })
 
- cmp.setup.cmdline({ '/', '?' }, {
-   mapping = cmp.mapping.preset.cmdline(),
-   sources = cmp.config.sources({
-  { name = 'nvim_lsp_document_symbol' }
-  }, {
-   { name = 'buffer' }
-  })
- })
+      -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+      cmp.setup.cmdline(':', {
+        mapping = cmp.mapping.preset.cmdline(),
+        sources = cmp.config.sources({
+          { name = 'path' },
+          { name = 'cmdline' },
+        }),
+        matching = { disallow_symbol_nonprefix_matching = false }
+      })
 
- cmp.setup.cmdline(':', {
- mapping = cmp.mapping.preset.cmdline(),
- sources = cmp.config.sources({
-   { name = 'path' }
-  }, {
-   { name = 'cmdline', keyword_length = 2 }
-  })
- })
-
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
-local has_words_before = function()
-  if vim.api.nvim_buf_get_option(0, "buftype") == "prompt" then return false end
-  local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-  return col ~= 0 and vim.api.nvim_buf_get_text(0, line-1, 0, line-1, col, {})[1]:match("^%s*$") == nil
-end
-cmp.setup({
-  mapping = {
-    ["<Tab>"] = vim.schedule_wrap(function(fallback)
-      if cmp.visible() and has_words_before() then
-        cmp.confirm({select = true})
-      else
-        fallback()
-      end
-    end),
-  },
-})
---vim.cmd('let g:vsnip_filetypes = {}')
-end,
-  },
+      cmp.event:on(
+        'confirm_done',
+        require('nvim-autopairs.completion.cmp').on_confirm_done()
+      )
+    end,
+  }
 }
