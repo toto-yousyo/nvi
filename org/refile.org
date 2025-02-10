@@ -604,6 +604,12 @@ https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/
 * TODO 上村さんを名簿についか
   [2025-02-04 Tue]
 * TODO 柳さん名簿bに追加 
+  DEADLINE: <2025-02-28 Fri>
+  3/3（月）から、柳さんが入社されます。
+ecforce管理画面の設定をお願いいたします。
+
+　ID：aotsubu.yanagi@gmail.com
+　PWD：A@tsubu831
   [2025-02-04 Tue]
 * TODO プロフィールシートを追加する
   [2025-02-04 Tue]
@@ -616,7 +622,8 @@ https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/
   CLOSED: [2025-02-06 Thu 11:38]
 ご発注お願い申し上げます。
   [2025-02-06 Thu]
-* TODO ラッピング修正ずみを前岡さんにいう
+* DONE ラッピング修正ずみを前岡さんにいう
+  CLOSED: [2025-02-10 Mon 16:27]
   [2025-02-06 Thu]
 * TODO 高木商店さまから返送ある
   [2025-02-07 Fri]
@@ -628,3 +635,6 @@ https://docs.google.com/document/d/1zLRqccY_d2-kb5pACprTHPQJVtSx-ELUDS8cqfI8-PQ/
 81190：		□あおつぶパック75包×2箱
 81189：		□あおつぶボトル750粒×2本
   [2025-02-07 Fri]
+* TODO 雑誌 GLOW 3月号とotona MUSE 3月号で掲載がありました
+ニュース一覧への追加をお願いいたします
+  [2025-02-10 Mon]

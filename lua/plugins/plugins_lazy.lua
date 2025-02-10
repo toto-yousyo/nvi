@@ -64,46 +64,46 @@ return {
   end,
 },
 
-{
-  'onsails/lspkind.nvim', event = 'InsertEnter', 
-  config = function()
-    require('lspkind').init({
-        symbol_map = {
-          Copilot = '',
-        }, 
-      })
-  end,
-},
+-- {
+--   'onsails/lspkind.nvim', event = 'InsertEnter', 
+--   config = function()
+--     require('lspkind').init({
+--         symbol_map = {
+--           Copilot = '',
+--         }, 
+--       })
+--   end,
+-- },
 
-{
-  'nvim-telescope/telescope.nvim', tag = '0.1.8', 
-    dependencies = { 'nvim-lua/plenary.nvim' }
-}, 
-{
-  "nvim-telescope/telescope-file-browser.nvim",
-  dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
-},
-{
-    'MunifTanjim/prettier.nvim', 
-    config = function()
-        local status, prettier = pcall(require, "prettier")
-        if (not status) then return end
-
-        prettier.setup {
-          bin = 'prettierd',
-          filetypes = {
-            "css",
-            "javascript",
-            "javascriptreact",
-            "typescript",
-            "typescriptreact",
-            "json",
-            "scss",
-            "python"
-          }
-        }
-    end,
-}, 
+ {
+   'nvim-telescope/telescope.nvim', tag = '0.1.8', 
+     dependencies = { 'nvim-lua/plenary.nvim' }
+ }, 
+ {
+   "nvim-telescope/telescope-file-browser.nvim",
+   dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+ },
+-- {
+--     'MunifTanjim/prettier.nvim', 
+--     config = function()
+--         local status, prettier = pcall(require, "prettier")
+--         if (not status) then return end
+--
+--         prettier.setup {
+--           bin = 'prettierd',
+--           filetypes = {
+--             "css",
+--             "javascript",
+--             "javascriptreact",
+--             "typescript",
+--             "typescriptreact",
+--             "json",
+--             "scss",
+--             "python"
+--           }
+--         }
+--     end,
+-- }, 
 {'brenoprata10/nvim-highlight-colors'}, 
 {'dinhhuy258/git.nvim'}, 
 {
@@ -173,15 +173,15 @@ return {
   config = function()
     require('Comment').setup()
     end, 
-}, 
--- For Commentout on React-TypeScript
-{
-  'JoosepAlviste/nvim-ts-context-commentstring',  
-  config = function()
-  require('Comment').setup{
-    pre_hook = require('ts_context_commentstring.integrations.comment_nvim').create_pre_hook(),
-  }
-  end, 
 }
+-- For Commentout on React-TypeScript
+-- {
+--   'JoosepAlviste/nvim-ts-context-commentstring',  
+--   config = function()
+--   require('Comment').setup{
+--     pre_hook = require('ts_context_commentstring.integrations.comment_nvim').create_pre_hook(),
+--   }
+--   end, 
+-- }
 
 }
