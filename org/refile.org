@@ -695,3 +695,5 @@ https://www.eslitespectrum.jp/
 * TODO ポンプ２個を出荷する
   DEADLINE: <2025-02-26 Wed>
   [2025-02-25 Tue]
+* TODO  柳さんの勤怠申請を作る
+  [2025-02-25 Tue]
