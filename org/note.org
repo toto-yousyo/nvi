@@ -53,4 +53,7 @@ CRの改行コードの表現にはもう一つの方法があり、下記のよ
       CTRL+SHIFT+ALT	LeftArrow	AdjustPaneSize={"Left", 1}
       same as any direction..
       CTRL+SHIFT	Z	TogglePaneZoomState
+* 2025-02-27 Thursday
 
+配送設定で、ポスト便設定のものは数量が増えたらゆうパックになっている。
+  引っ張ってくるところが間違えているかも
