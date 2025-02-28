@@ -23,7 +23,7 @@ vim.opt.clipboard:append({ "unnamedplus" }) -- レジスタとクリップボー
 -- メニューとコマンド
 vim.opt.wildmenu = true -- コマンドラインで補完
 vim.opt.cmdheight = 1 -- コマンドラインの表示行数
-vim.opt.laststatus = 2 -- 下部にステータスラインを表示
+vim.opt.laststatus = 3 -- 下部にステータスラインを表示
 vim.opt.showcmd = true -- コマンドラインに入力されたコマンドを表示
 
 -- 検索・置換え
