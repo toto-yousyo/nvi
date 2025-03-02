@@ -44,16 +44,17 @@ return {
         function(server_name)
           require("lspconfig")[server_name].setup({
             capabilities = capabilities,
-      })
-
-      -- TypeScript Server Setup
-      require('lspconfig').ts_ls.setup({
-        on_attach = on_attach,
-        filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
-        cmd = { "typescript-language-server", "--stdio" },
-      })
-    end,
-
+          })
+        end, 
+          -- TypeScript Server Setup
+        ["ts_ls"] = function()
+          require('lspconfig').ts_ls.setup({
+            on_attach = function(client, bufnr)
+            end,
+            filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+            cmd = { "typescript-language-server", "--stdio" },
+          })
+        end,
         ["lua_ls"] = function()
           local lspconfig = require("lspconfig")
 

@@ -1,11 +1,11 @@
 return {
-  { "hrsh7th/cmp-nvim-lsp", lazy = true, event = { "InsertEnter", "CmdlineEnter" }  },
-  { "hrsh7th/cmp-buffer", lazy = true, event = { "InsertEnter", "CmdlineEnter" }  },
-  { "hrsh7th/cmp-path", lazy = true, event = { "InsertEnter", "CmdlineEnter" } },
-  { "hrsh7th/cmp-cmdline", lazy = true, event = { "InsertEnter", "CmdlineEnter" } },
+  { "hrsh7th/cmp-nvim-lsp",     lazy = true, event = { "InsertEnter", "CmdlineEnter" } },
+  { "hrsh7th/cmp-buffer",       lazy = true, event = { "InsertEnter", "CmdlineEnter" } },
+  { "hrsh7th/cmp-path",         lazy = true, event = { "InsertEnter", "CmdlineEnter" } },
+  { "hrsh7th/cmp-cmdline",      lazy = true, event = { "InsertEnter", "CmdlineEnter" } },
   { "saadparwaiz1/cmp_luasnip", lazy = true, event = { "InsertEnter", "CmdlineEnter" } },
-  { "L3MON4D3/LuaSnip", lazy = true, event = { "InsertEnter", "CmdlineEnter" } },
-  { "onsails/lspkind-nvim", lazy = true, event = { "InsertEnter", "CmdlineEnter" } },
+  { "L3MON4D3/LuaSnip",         lazy = true, event = { "InsertEnter", "CmdlineEnter" } },
+  { "onsails/lspkind-nvim",     lazy = true, event = { "InsertEnter", "CmdlineEnter" } },
   {
     "hrsh7th/nvim-cmp",
     lazy = true,
@@ -16,15 +16,6 @@ return {
 
       cmp.setup({
         preselect = cmp.PreselectMode.None,
-        formatting = {
-          format = require("lspkind").cmp_format {
-            mode = "symbol",
-            preset = "codicons",
-            symbol_map = {
-              Copilot = "",
-            }
-          }
-        },
         snippet = {
           expand = function(args)
             require('luasnip').lsp_expand(args.body)
@@ -35,17 +26,25 @@ return {
           ['<C-f>'] = cmp.mapping.scroll_docs(4),
           ['<C-Space>'] = cmp.mapping.complete(),
           ['<C-e>'] = cmp.mapping.abort(),
+          -- 補完確定の設定を修正
           ['<CR>'] = cmp.mapping(function(fallback)
             if cmp.visible() then
-              if luasnip.expandable() then
-                luasnip.expand()
-              else
-                cmp.confirm();
-              end
+              cmp.confirm({ select = true }) -- 候補を選択して Enter で確定
             else
-              fallback()
+              fallback()                     -- 通常の Enter 動作
             end
-          end),
+          end, { "i", "s" }),
+          -- function(fallback)
+          --   if cmp.visible() then
+          --     if luasnip.expandable() then
+          --       luasnip.expand()
+          --     else
+          --       cmp.confirm();
+          --     end
+          --   else
+          --     fallback()
+          --   end
+          -- end, { "i", "s" }),
 
           ["<Tab>"] = cmp.mapping(function(fallback)
             if cmp.visible() then
@@ -68,13 +67,23 @@ return {
           end, { "i", "s" }),
 
         }),
-        sources = cmp.config.sources {
+        sources = cmp.config.sources({
           { name = 'luasnip' },
           { name = 'nvim_lsp' },
           { name = 'path' },
           { name = 'buffer' },
+          { name = "avante" },
           { name = "copilot" },
-          { name = "tailwindcss" }
+          { name = "tailwindcss" },
+        }),
+
+        formatting = {
+          format = function(entry, vim_item)
+            if entry.source.name == "copilot" then
+              vim_item.kind = " Copilot"
+            end
+            return vim_item
+          end,
         },
       })
 

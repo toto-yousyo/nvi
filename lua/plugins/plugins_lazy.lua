@@ -1,5 +1,3 @@
 return {
-
--- {'dinhhuy258/git.nvim'}, 
-
+  { "tpope/vim-liquid" },
 }
