@@ -727,8 +727,8 @@ https://www.eslitespectrum.jp/
 * DONE 神田さんにハンカチをいう
   CLOSED: [2025-02-28 Fri 11:07]
   [2025-02-27 Thu]
-* TODO サンエスさんpんぷ出荷　準備
-  DEADLINE: <2025-03-03 Mon>
+* DONE サンエスさんpんぷ出荷　準備
+  DEADLINE: <2025-03-03 Mon> CLOSED: [2025-03-03 Mon 11:10]
   [2025-02-28 Fri]
 * TODO ステップメールを条件の設定する
   DEADLINE: <2025-03-03 Mon>
@@ -736,5 +736,10 @@ https://www.eslitespectrum.jp/
 * TODO また、ホームページのLED高天井灯とも入れ替えをしてほしいです🙏
 宜しくお願い致します
   [2025-02-28 Fri]
-* TODO 大容量のスマホの必須が消えている
+* DONE 大容量のスマホの必須が消えている
+  CLOSED: [2025-03-03 Mon 12:33]
   [2025-02-28 Fri]
+* TODO サンエスさん３個ポンプが残っている
+  [2025-03-03 Mon]
+* TODO ponpの破損部分をおくる
+  [2025-03-03 Mon]
