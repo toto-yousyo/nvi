@@ -741,5 +741,8 @@ https://www.eslitespectrum.jp/
   [2025-02-28 Fri]
 * TODO サンエスさん３個ポンプが残っている
   [2025-03-03 Mon]
-* TODO ponpの破損部分をおくる
+* DONE ponpの破損部分をおくる
+  CLOSED: [2025-03-04 Tue 09:04]
   [2025-03-03 Mon]
+* TODO 棚卸する
+  [2025-03-04 Tue]
