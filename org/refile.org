@@ -733,7 +733,8 @@ https://www.eslitespectrum.jp/
 * TODO ステップメールを条件の設定する
   DEADLINE: <2025-03-03 Mon>
   [2025-02-28 Fri]
-* TODO また、ホームページのLED高天井灯とも入れ替えをしてほしいです🙏
+* DONE また、ホームページのLED高天井灯とも入れ替えをしてほしいです🙏
+  CLOSED: [2025-03-05 Wed 13:52]
 宜しくお願い致します
   [2025-02-28 Fri]
 * DONE 大容量のスマホの必須が消えている
@@ -744,5 +745,29 @@ https://www.eslitespectrum.jp/
 * DONE ponpの破損部分をおくる
   CLOSED: [2025-03-04 Tue 09:04]
   [2025-03-03 Mon]
-* TODO 棚卸する
+* DONE 棚卸する
+  CLOSED: [2025-03-05 Wed 14:20]
   [2025-03-04 Tue]
+* DONE 社長にニュアンスを伺う
+  CLOSED: [2025-03-05 Wed 13:52]
+  [2025-03-05 Wed]
+* TODO 今後のPOPUPの予定
+大宮髙島屋 ベルナチュレール POP UP  SHOP
+4/9(水）- 4/15(火）
+
+4 月
+玉川髙島屋 ベルナチュレール POP UP  SHOP
+4/30(水）- 5/6(火）
+
+5 月
+近鉄百貨店 POP UP  SHOP
+5/28(水）- 6/10(火）
+あべのハルカス近鉄本店
+  [2025-03-05 Wed]
+* TODO 新店OPENになります！
+3/14OPEN
+
+■Cosme Kitchen BEAUTY 名古屋タカシマヤ ゲートタワーモール
+  [2025-03-05 Wed]
+* TODO LED中面も載せる
+  [2025-03-05 Wed]
