@@ -75,6 +75,7 @@ return {
           { name = "avante" },
           { name = "copilot" },
           { name = "tailwindcss" },
+          { name = "render-markdown" },
         }),
 
         formatting = {
