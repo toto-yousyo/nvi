@@ -769,5 +769,6 @@ https://www.eslitespectrum.jp/
 
 ■Cosme Kitchen BEAUTY 名古屋タカシマヤ ゲートタワーモール
   [2025-03-05 Wed]
-* TODO LED中面も載せる
+* DONE LED中面も載せる
+  CLOSED: [2025-03-06 Thu 09:14]
   [2025-03-05 Wed]
