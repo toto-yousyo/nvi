@@ -5,8 +5,8 @@ return {
   lazy = false,
   version = false,
   opts = {
-    provider = "copilot",
-    -- provider = "claude",
+    -- provider = "copilot",
+    provider = "claude",
     -- provider = "openai",
     auto_suggestions_provider = "copilot",
     behaviour = {
