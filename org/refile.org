@@ -668,9 +668,11 @@ ecforce管理画面の設定をお願いいたします。
 * DONE buttonの位置がずれている
   CLOSED: [2025-02-14 Fri 12:28]
   [2025-02-14 Fri]
-* TODO 水素サーバー
+* DONE 水素サーバー
+  CLOSED: [2025-03-07 Fri 10:11]
   [2025-02-19 Wed]
-* TODO ＠cosmeTOKYOでのあおつぶ商品の販売 3/5
+* DONE ＠cosmeTOKYOでのあおつぶ商品の販売 3/5
+  CLOSED: [2025-03-07 Fri 10:11]
 販売開始が3/5で確定しました。
 
 @高田久和  
