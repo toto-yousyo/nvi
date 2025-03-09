@@ -109,3 +109,8 @@ vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 vim.keymap.set('n', '<Leader>tk', '<cmd>:ChatGPT<cr>')
 vim.keymap.set('n', '<Leader>tj', '<cmd>:ChatGPTActAs<cr>')
 vim.keymap.set('n', '<Leader>tt', '<cmd>:ChatGPTEditWithInstructions<cr>')
+
+-- Cursor用キーマップ
+if vim.g.vscode then
+  vim.keymap.set("n", "<leader>ff", "<Cmd>call VSCodeNotify('workbench.action.quickOpen')<CR>")
+end
