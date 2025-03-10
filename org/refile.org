@@ -753,7 +753,8 @@ https://www.eslitespectrum.jp/
 * DONE 社長にニュアンスを伺う
   CLOSED: [2025-03-05 Wed 13:52]
   [2025-03-05 Wed]
-* TODO 今後のPOPUPの予定
+* DONE 今後のPOPUPの予定
+  CLOSED: [2025-03-10 Mon 15:19]
 大宮髙島屋 ベルナチュレール POP UP  SHOP
 4/9(水）- 4/15(火）
 
