@@ -768,7 +768,8 @@ https://www.eslitespectrum.jp/
 5/28(水）- 6/10(火）
 あべのハルカス近鉄本店
   [2025-03-05 Wed]
-* TODO 新店OPENになります！
+* DONE 新店OPENになります！
+  CLOSED: [2025-03-14 Fri 09:49]
 3/14OPEN
 
 ■Cosme Kitchen BEAUTY 名古屋タカシマヤ ゲートタワーモール
