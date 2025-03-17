@@ -617,7 +617,8 @@ ecforce管理画面の設定をお願いいたします。
   [2025-02-04 Tue]
 * TODO プロフィールシートを追加する
   [2025-02-04 Tue]
-* DOING amerikanFarmaxu, ,をショップリストのロゴリストに
+* DONE amerikanFarmaxu, ,をショップリストのロゴリストに
+  CLOSED: [2025-03-17 Mon 08:49]
   [2025-02-05 Wed]
 * DONE カテゴリを変更したら、ナびやフッターを変更しないといけない
   CLOSED: [2025-02-05 Wed 14:01]
@@ -777,6 +778,16 @@ https://www.eslitespectrum.jp/
 * DONE LED中面も載せる
   CLOSED: [2025-03-06 Thu 09:14]
   [2025-03-05 Wed]
-* TODO 名刺２枚入稿
-  DEADLINE: <2025-03-17 Mon>
+* DONE 名刺２枚入稿
+  DEADLINE: <2025-03-17 Mon> CLOSED: [2025-03-17 Mon 08:49]
   [2025-03-13 Thu]
+* TODO 前岡さんに箱を確認してから入稿
+  DEADLINE: <2025-03-18 Tue>
+  [2025-03-17 Mon]
+* TODO 3/26（水）10時
+  DEADLINE: <2025-03-26 Wed>
+LPをおろす作業をお願いいたします。
+  [2025-03-17 Mon]
+* TODO ハンズミナモア掲載す
+  DEADLINE: <2025-03-24 Mon>
+  [2025-03-17 Mon]
