@@ -734,8 +734,8 @@ https://www.eslitespectrum.jp/
 * DONE サンエスさんpんぷ出荷　準備
   DEADLINE: <2025-03-03 Mon> CLOSED: [2025-03-03 Mon 11:10]
   [2025-02-28 Fri]
-* TODO ステップメールを条件の設定する
-  DEADLINE: <2025-03-03 Mon>
+* DONE ステップメールを条件の設定する
+  DEADLINE: <2025-03-03 Mon> CLOSED: [2025-03-19 Wed 09:02]
   [2025-02-28 Fri]
 * DONE また、ホームページのLED高天井灯とも入れ替えをしてほしいです🙏
   CLOSED: [2025-03-05 Wed 13:52]
@@ -781,8 +781,8 @@ https://www.eslitespectrum.jp/
 * DONE 名刺２枚入稿
   DEADLINE: <2025-03-17 Mon> CLOSED: [2025-03-17 Mon 08:49]
   [2025-03-13 Thu]
-* TODO 前岡さんに箱を確認してから入稿
-  DEADLINE: <2025-03-18 Tue>
+* DONE 前岡さんに箱を確認してから入稿
+  DEADLINE: <2025-03-18 Tue> CLOSED: [2025-03-19 Wed 09:02]
   [2025-03-17 Mon]
 * TODO 3/26（水）10時
   DEADLINE: <2025-03-26 Wed>
@@ -798,3 +798,6 @@ LPをおろす作業をお願いいたします。
 * TODO runbellラベル入稿数r
   DEADLINE: <2025-03-24 Mon>
   [2025-03-18 Tue]
+* TODO prioにパネルを印刷
+  DEADLINE: <2025-03-21 Fri>
+  [2025-03-19 Wed]
