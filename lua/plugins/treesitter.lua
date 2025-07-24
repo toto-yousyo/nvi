@@ -6,7 +6,27 @@ return {
     config = function()
       local configs = require("nvim-treesitter.configs")
       configs.setup({
-        ensure_installed = "all",
+        ensure_installed = {
+          "bash",
+          "comment",
+          "css",
+          "csv",
+          "diff",
+          "html",
+          "javascript",
+          "json",
+          "lua",
+          "markdown",
+          "python",
+          "rust",
+          "sql",
+          "ssh_config",
+          "toml",
+          "vim",
+          "xml",
+          "yaml",
+          "vimdoc",
+        },
         ignore_install = {
           "org",
         },
