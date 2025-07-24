@@ -12,3 +12,26 @@
 # Neovim cache files
 *.cache
 
+# macOS
+.DS_Store
+
+# Lazy.nvim plugin directory (プラグインは自動インストールされる)
+lazy/
+
+# Mason binary and package cache (言語サーバーは自動インストールされる)
+mason/
+
+# Telescope history
+telescope_history
+
+# Journal files (個人的なノート)
+journal/
+
+# 使用しないファイル
+notuse/
+
+# Neorg workspace files
+*.norg
+
+# Log files
+*.log

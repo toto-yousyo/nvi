@@ -30,7 +30,7 @@ keymap("n", "gl", "gt", opts)
 keymap("n", "ss", ":split<Return><C-w>w", opts)
 keymap("n", "sv", ":vsplit<Return><C-w>w", opts)
 
-keymap("n", "<ca>", "gg<S-v>G", opts)
+keymap("n", "ca", "gg<S-v>G", opts)
 
 keymap("n", "x", '"_x', opts)
 

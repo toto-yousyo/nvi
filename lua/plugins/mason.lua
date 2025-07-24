@@ -1,20 +1,8 @@
 return {
-    {
-        'williamboman/mason.nvim', 
-        config = function()
-        local status, mason = pcall(require, "mason")
-if (not status) then return end
-local status2, lspconfig = pcall(require, "mason-lspconfig")
-if (not status2) then return end
-
-mason.setup({
-
-})
-
-lspconfig.setup {
-  ensure_installed = {"tailwindcss" },
+  "williamboman/mason.nvim",
+  lazy = false,
+  build = ":MasonUpdate",
+  config = function()
+    require("mason").setup()
+  end,
 }
-end, 
-}, 
-}
-    

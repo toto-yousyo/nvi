@@ -4,12 +4,16 @@ return {
     name = "catppuccin",
     lazy = false,
     priority = 1000,
+    config = function()
+        require("catppuccin").setup({
+        })
+    end
 },
-{
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-},
+-- {
+--     "folke/tokyonight.nvim",
+--     lazy = false,
+--     priority = 1000,
+-- },
 {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons',
@@ -48,11 +52,11 @@ return {
     cmd = "Neotree",
 },
 -- tabline 
--- {
---  "kdheepak/tabline.nvim",
-    -- opts = {},
-    -- event = "BufWinEnter",
--- },
+{
+ "kdheepak/tabline.nvim",
+     opts = {},
+     event = "BufWinEnter",
+ },
 -- nvim-treesitter
 {
     "nvim-treesitter/nvim-treesitter",
@@ -62,16 +66,12 @@ return {
         local configs = require("nvim-treesitter.configs")
         configs.setup({
             ensure_installed = {
-                "awk",
                 "bash",
                 "comment",
-                "c",
                 "css",
                 "csv",
                 "diff",
-                "gpg",
                 "html",
-                "htmldjango",
                 "javascript",
                 "json",
                 "lua",
@@ -80,12 +80,10 @@ return {
                 "rust",
                 "sql",
                 "ssh_config",
-                "tmux",
                 "toml",
                 "vim",
                 "xml",
                 "yaml",
-                "regex",
                 "vimdoc",
             },
             sync_install = false,
@@ -94,31 +92,6 @@ return {
             indent = { enable = true },
         })
     end,
-},
-    -- noice
-{
-    "folke/noice.nvim",
-    event = "VeryLazy",
-    dependencies = {
-        "MunifTanjim/nui.nvim",
-        "rcarriga/nvim-notify",
-    },
-    opts = {
-        routes = {
-            {
-                filter = { event = "msg_show", find = "E486: Pattern not found: .*" },
-                opts = { skip = true },
-            },
-        },
-        lsp = {
-            -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
-            override = {
-                ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
-                ["vim.lsp.util.stylize_markdown"] = true,
-                ["cmp.entry.get_documentation"] = true, -- requires hrsh7th/nvim-cmp
-            },
-        },
-    },
 },
 -- git
 {
@@ -174,12 +147,6 @@ return {
     priority = 1000, 
     config = true, 
   }, 
-{
-    "nvim-neorg/neorg",
-    lazy = false, 
-    version = "*", 
-    config = true, 
-},
 {"stevearc/dressing.nvim", opts = {}},  
 {
     "iamcco/markdown-preview.nvim",
@@ -247,11 +214,29 @@ return {
 }, 
 {
     "nvimtools/none-ls.nvim",
-    optional = true,
-    opts = function(_, opts)
-      local nls = require("null-ls")
-      opts.sources = vim.list_extend(opts.sources or {}, {
-        nls.builtins.diagnostics.markdownlint_cli2,
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "williamboman/mason.nvim",
+      "jay-babu/mason-null-ls.nvim",
+    },
+    config = function()
+      local null_ls = require("null-ls")
+
+      require("mason-null-ls").setup({
+        ensure_installed = {
+          "prettier",
+          "eslint_d",
+          "stylua",
+        },
+        automatic_installation = false,
+      })
+
+      null_ls.setup({
+        sources = {
+          null_ls.builtins.formatting.prettier,
+          null_ls.builtins.diagnostics.eslint_d,
+          null_ls.builtins.formatting.stylua,
+        },
       })
     end,
 }, 

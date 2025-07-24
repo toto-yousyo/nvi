@@ -55,6 +55,7 @@ vim.opt.showmatch = true -- 対応する括弧をハイライト表示
 vim.opt.winblend = 0 -- ウィンドウの不透明度
 vim.opt.pumblend = 0 -- ポップアップメニューの不透明度
 vim.opt.showtabline = 2 -- タブラインを表示する設定
+vim.opt.foldtext = "v:lua.vim.treesitter.foldtext()" -- treesitter plugin setting for foldtext
 vim.opt.signcolumn = "yes" -- サインカラムを表示
 
 ---- 行番号の色を変更（色は適宜変更してください）
@@ -67,6 +68,6 @@ vim.opt.foldcolumn = "1"
 vim.opt.foldlevel = 99
 vim.opt.foldlevelstart = 99
 vim.opt.foldenable = true
-vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
-vim.opt.foldtext = require("modules.foldtext")
+vim.opt.foldmethod = "indent"
+-- vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+-- vim.opt.foldtext = require("modules.foldtext")

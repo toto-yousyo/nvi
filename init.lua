@@ -31,6 +31,12 @@ vim.opt.modifiable = true
 -- leader key
 vim.g.mapleader = " "
 
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = "*",
+  callback = function()
+    vim.lsp.buf.format({ async = false })
+  end,
+})
 
 -- require core/ and user/
 require("core.options")
