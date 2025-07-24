@@ -24,7 +24,7 @@ return {
       sources = {
         -- 既存の sources 設定
         null_ls.builtins.formatting.prettier,
-        null_ls.builtins.diagnostics.eslint,
+        null_ls.builtins.diagnostics.eslint_d,
         null_ls.builtins.formatting.stylua,
       },
     })

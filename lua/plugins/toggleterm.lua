@@ -1,19 +1,16 @@
 return {
-{
-    'akinsho/toggleterm.nvim', 
-    version = "*", 
-    opts = {
-      size = 100,
-      open_mapping = [[<c-t>]],
-      hide_numbers = true,
-      shade_filetypes = {},
-      shade_terminals = true,
-      shading_factor = 2,
-      start_in_insert = true,
-      insert_mappings = true,
-      persist_size = true,
+  'akinsho/toggleterm.nvim',
+  version = '*',
+  config = function()
+    require('toggleterm').setup()
+    local Terminal = require('toggleterm.terminal').Terminal
+    local lazygit = Terminal:new {
+      cmd = 'lazygit',
       direction = 'float',
-      close_on_exit = true,
+      hidden = true,
     }
-}, 
+    vim.keymap.set({ 'n', 't' }, '<leader>p', function()
+      lazygit:toggle()
+    end, { desc = 'Toggle Lazygit (float)' })
+  end,
 }

@@ -92,9 +92,9 @@ function HighlightedFoldtext()
   end
 
   local folded = {
-    { " πχ", "FoldedIcon" },
+    { " σ°‚", "FoldedIcon" },
     { "+" .. vim.v.foldend - vim.v.foldstart .. " lines", "FoldedText" },
-    { "πυ ", "FoldedIcon" },
+    { "σ°ƒ ", "FoldedIcon" },
   }
 
   for _, item in ipairs(folded) do

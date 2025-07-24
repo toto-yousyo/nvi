@@ -3,7 +3,7 @@ return {
   {
     'nvimdev/lspsaga.nvim',
     dependencies = {
-      -- 'nvim-treesitter/nvim-treesitter',
+      'nvim-treesitter/nvim-treesitter',
       'nvim-tree/nvim-web-devicons',
     },
     config = function()
@@ -26,7 +26,7 @@ return {
         }
       })
 
-      keymap.set('n', '<leader>,',  "<Cmd>Lspsaga finder<CR>",  { desc = 'Telescope: live grep args', })
+      keymap.set('n', '<leader>,', "<Cmd>Lspsaga finder<CR>", { desc = 'Telescope: live grep args', })
     end,
   }
 }
