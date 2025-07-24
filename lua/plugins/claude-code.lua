@@ -1,4 +1,3 @@
-
 return {
   "greggh/claude-code.nvim",
   dependencies = {

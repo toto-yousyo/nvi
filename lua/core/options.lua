@@ -1,7 +1,7 @@
 
 -- lang
 if vim.fn.has('mac')==1 then -- 表示言語を英語にする（Mac）
-vim.cmd('language en_US')
+-- vim.cmd('language en_US')
 else
 vim.cmd('language en_US.utf8') -- 表示言語を英語にする（Linux）
 end
@@ -23,7 +23,7 @@ vim.opt.clipboard:append({ "unnamedplus" }) -- レジスタとクリップボー
 -- メニューとコマンド
 vim.opt.wildmenu = true -- コマンドラインで補完
 vim.opt.cmdheight = 1 -- コマンドラインの表示行数
-vim.opt.laststatus = 2 -- 下部にステータスラインを表示
+vim.opt.laststatus = 3 -- 下部にステータスラインを表示
 vim.opt.showcmd = true -- コマンドラインに入力されたコマンドを表示
 
 -- 検索・置換え
@@ -37,7 +37,7 @@ vim.opt.background = "dark" -- ダークカラーを使用する
 
 -- インデント
 vim.opt.shiftwidth = 2 -- シフト幅を4に設定する
-vim.opt.tabstop = 2 -- タブ幅を4に設定する
+vim.opt.tabstop = 2 -- タブ幅を2に設定する
 vim.opt.expandtab = true -- タブ文字をスペースに置き換える
 vim.opt.autoindent = true -- 自動インデントを有効にする
 vim.opt.smartindent = true -- インデントをスマートに調整する
@@ -46,7 +46,7 @@ vim.opt.smartindent = true -- インデントをスマートに調整する
 vim.opt.number = true -- 行番号を表示
 vim.opt.relativenumber = false -- 相対行番号を表示
 vim.opt.wrap = true -- テキストの自動折り返しを無効に
-vim.opt.showtabline = 2 -- タブラインを表示
+vim.opt.showtabline = 1 -- タブラインを表示
                         -- （1:常に表示、2:タブが開かれたときに表示）
 vim.opt.visualbell = true -- ビープ音を表示する代わりに画面をフラッシュ
 vim.opt.showmatch = true -- 対応する括弧をハイライト表示
@@ -54,20 +54,28 @@ vim.opt.showmatch = true -- 対応する括弧をハイライト表示
 -- インタフェース
 vim.opt.winblend = 0 -- ウィンドウの不透明度
 vim.opt.pumblend = 0 -- ポップアップメニューの不透明度
-vim.opt.showtabline = 2 -- タブラインを表示する設定
-vim.opt.foldtext = "v:lua.vim.treesitter.foldtext()" -- treesitter plugin setting for foldtext
 vim.opt.signcolumn = "yes" -- サインカラムを表示
 
 ---- 行番号の色を変更（色は適宜変更してください）
 vim.cmd("highlight LineNr guifg=#8a70ac")
 
 -- カーソルの形状
-vim.o.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
+-- vim.o.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
+vim.opt.guicursor = {
+  "n-v-c:block-Cursor/lCursor-blinkwait175-blinkon175-blinkoff175",
+  "i:ver25-Cursor/lCursor-blinkwait175-blinkon175-blinkoff175",
+  "r-cr:hor20-Cursor/lCursor-blinkwait175-blinkon175-blinkoff175"
+}
 -- fold
 vim.opt.foldcolumn = "1"
 vim.opt.foldlevel = 99
 vim.opt.foldlevelstart = 99
 vim.opt.foldenable = true
-vim.opt.foldmethod = "indent"
--- vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
--- vim.opt.foldtext = require("modules.foldtext")
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldtext = require("modules.foldtext")
+--package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?/init.lua;"
+--package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?.lua;"
+--package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/magick/init.lua"
+--vim.api.nvim_set_hl(0, "CmpItemKindCopilot", {fg ="#6CC644"})
+

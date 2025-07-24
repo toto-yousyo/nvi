@@ -1,66 +1,49 @@
 return {
-	{'nvim-telescope/telescope-file-browser.nvim',
-	config = function()
-	local status, telescope = pcall(require, "telescope")
-if (not status) then return end
-local actions = require('telescope.actions')
-local builtin = require("telescope.builtin")
-
-local function telescope_buffer_dir()
-  return vim.fn.expand('%:p:h')
-end
-
-local fb_actions = require "telescope".extensions.file_browser.actions
-
-telescope.setup {
-  defaults = {
-    mappings = {
-      n = {
-        ["q"] = actions.close 
-      },
+  { "nvim-telescope/telescope-fzf-native.nvim", lazy = true, build = "make" },
+  {
+    'nvim-telescope/telescope.nvim',
+    lazy = true,
+    keys = {
+      { "<leader><leader>", mode = "n" },
+      { "<leader>ff", mode = "n" },
+      { "<leader>fg", mode = "n" },
+      { "<leader>fb", mode = "n" },
+      { "<leader>fh", mode = "n" },
+      { "<leader>fc", mode = "n" },
+      { "<leader>fC", mode = "n" },
+      { "<leader>fk", mode = "n" },
+      { "<leader>fp", mode = "n" },
     },
-    file_ignore_patterns = {
-          "node_modules"
-    }, 
-  },
-
-  extensions = {
-    file_browser = {
-      theme = "dropdown",
-      -- disables netrw and use telescope-file-browser in its place
-      hijack_netrw = true,
-      mappings = {
-        -- your custom insert mode mappings
-        ["i"] = {
-          ["<C-w>"] = function() vim.cmd('normal vbd') end,
+    config = function()
+      local builtin = require('telescope.builtin')
+      vim.keymap.set("n", "<leader><leader>", builtin.find_files, { desc = "Find Files" })
+      vim.keymap.set("n", "<leader>ff", function()
+        require("telescope").extensions.frecency.frecency {}
+      end)
+      vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = "Live Grep" })
+      vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = "Find from Buffers" })
+      vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = "Find Helps" })
+      vim.keymap.set('n', '<leader>fc', builtin.commands, { desc = "Find Commands" })
+      vim.keymap.set('n', '<leader>fC', function()
+        builtin.colorscheme { enable_preview = true }
+      end, { desc = "Find Colorschemes" })
+      vim.keymap.set('n', '<leader>fk', builtin.keymaps, { desc = "Find Keymaps" })
+      vim.keymap.set("n", "<leader>fp", require("telescope").extensions.projects.projects, { desc = "Find Projects"})
+      require('telescope').setup {
+        defaults = {
+          file_ignore_patterns = {
+            "node_modules",
+            "target",
+            ".git"
+          }
         },
-        ["n"] = {
-          -- your custom normal mode mappings
-          ["N"] = fb_actions.create,
-          ["h"] = fb_actions.goto_parent_dir,
-          ["/"] = function()
-            vim.cmd('startinsert')
-          end
-        },
-      },
-    },
-  },
-}
-telescope.load_extension("file_browser")
-
-vim.keymap.set("n", "sf", function()
-  telescope.extensions.file_browser.file_browser({
-    path = "%:p:h",
-    cwd = telescope_buffer_dir(),
-    respect_gitignore = false,
-    hidden = true,
-    grouped = true,
-    previewer = false,
-    initial_mode = "normal",
-    layout_config = { height = 40 }
-  })
-end)
-
-end,
-},
+        extensions = {
+          ---@type FrecencyOpts
+          frecency = {
+            matcher = "fuzzy",
+          },
+        }
+      }
+    end,
+  }
 }
