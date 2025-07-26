@@ -79,12 +79,7 @@ return {
         }),
 
         formatting = {
-          format = function(entry, vim_item)
-            if entry.source.name == "copilot" then
-              vim_item.kind = " Copilot"
-            end
-            return vim_item
-          end,
+          format = require("nvim-highlight-colors").format,
         },
       })
 
