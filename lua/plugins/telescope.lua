@@ -12,8 +12,10 @@ return {
       { "<leader>fc", mode = "n" },
       { "<leader>fC", mode = "n" },
       { "<leader>fk", mode = "n" },
-      { "<leader>fp", mode = "n" },
     },
+    dependencies = {
+      "nvim-lua/plenary.nvim", 
+        {"nvim-telescope/telescope-fzf-native.nvim", build = "make"}},  
     config = function()
       local builtin = require('telescope.builtin')
       vim.keymap.set("n", "<leader><leader>", builtin.find_files, { desc = "Find Files" })
@@ -28,7 +30,8 @@ return {
         builtin.colorscheme { enable_preview = true }
       end, { desc = "Find Colorschemes" })
       vim.keymap.set('n', '<leader>fk', builtin.keymaps, { desc = "Find Keymaps" })
-      vim.keymap.set("n", "<leader>fp", require("telescope").extensions.projects.projects, { desc = "Find Projects"})
+      -- vim.keymap.set("n", "<leader>fp", require("telescope").extensions.projects.projects, { desc = "Find Projects"})
+
       require('telescope').setup {
         defaults = {
           file_ignore_patterns = {
@@ -38,10 +41,12 @@ return {
           }
         },
         extensions = {
-          ---@type FrecencyOpts
-          frecency = {
-            matcher = "fuzzy",
-          },
+            fzf = {
+              fuzzy = true,
+              override_generic_sorter = true,
+              override_file_sorter = true,
+              case_mode = "smart_case",
+            },
         }
       }
     end,
