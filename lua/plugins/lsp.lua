@@ -110,8 +110,4 @@ return {
       })
     end,
   },
-  {
-    "nvimdev/lspsaga.nvim",
-    opts = {},
-  },
 }

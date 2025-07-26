@@ -29,63 +29,56 @@ local function get_cwd()
   return "(" .. d .. ")"
 end
 
-local function is_available_lspsaga()
-  local ok, _ = pcall(require, "lspsaga")
-  if not ok then
-    return false
-  end
-  return true
-end
 
 return {
   {
-'nvim-lualine/lualine.nvim',
-config = function()
-local status, lualine = pcall(require, "lualine")
-if (not status) then return end
+    'nvim-lualine/lualine.nvim',
+    config = function()
+      local status, lualine = pcall(require, "lualine")
+      if (not status) then return end
 
-lualine.setup {
-  options = {
-    icons_enabled = true,
-    theme = 'dracula',
-    section_separators = { left = '', right = '' },
-    component_separators = { left = '', right = '' },
-    disabled_filetypes = {}
+      lualine.setup {
+        options = {
+          icons_enabled = true,
+          theme = 'dracula',
+          section_separators = { left = '', right = '' },
+          component_separators = { left = '', right = '' },
+          disabled_filetypes = {}
+        },
+        sections = {
+          lualine_a = { 'mode' },
+          lualine_b = { 'branch' },
+          lualine_c = { {
+            'filename',
+            file_status = true, -- displays file status (readonly status, modified status)
+            path = 1      -- 0 = just filename, 1 = relative path, 2 = absolute path
+          } },
+          lualine_x = {
+            { 'diagnostics', sources = { "nvim_diagnostic" }, symbols = { error = '? ', warn = '? ', info = '? ',
+              hint = '? ' } },
+            'encoding',
+            'filetype'
+          },
+          lualine_y = { 'progress' },
+          lualine_z = { 'location' }
+        },
+        inactive_sections = {
+          lualine_a = {},
+          lualine_b = {},
+          lualine_c = {
+            -- {
+            -- 'filename',
+            --      file_status = true, -- displays file status (readonly status, modified status)
+            --      path = 1 -- 0 = just filename, 1 = relative path, 2 = absolute path
+            -- }
+          },
+          lualine_x = { 'location' },
+          lualine_y = {},
+          lualine_z = {}
+        },
+        tabline = {},
+        extensions = { 'fugitive' }
+      }
+    end,
   },
-  sections = {
-    lualine_a = { 'mode' },
-    lualine_b = { 'branch' },
-    lualine_c = { {
-      'filename',
-      file_status = true, -- displays file status (readonly status, modified status)
-      path = 1 -- 0 = just filename, 1 = relative path, 2 = absolute path
-    } },
-    lualine_x = {
-      { 'diagnostics', sources = { "nvim_diagnostic" }, symbols = { error = '? ', warn = '? ', info = '? ',
-        hint = '? ' } },
-      'encoding',
-      'filetype'
-    },
-    lualine_y = { 'progress' },
-    lualine_z = { 'location' }
-  },
-  inactive_sections = {
-    lualine_a = {},
-    lualine_b = {},
-    lualine_c = {
--- {
--- 'filename',
---      file_status = true, -- displays file status (readonly status, modified status)
---      path = 1 -- 0 = just filename, 1 = relative path, 2 = absolute path
--- }
-    },
-    lualine_x = { 'location' },
-    lualine_y = {},
-    lualine_z = {}
-  },
-  tabline = {},
-  extensions = { 'fugitive' }
-}
-end,
-},
 }

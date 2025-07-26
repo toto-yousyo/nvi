@@ -13,18 +13,18 @@ return {
       ensure_installed = {
         -- 必要なツールを指定
         "prettier",
-        "eslint_d",
+        "eslint",
         "stylua",
         -- 他の必要なツール
       },
-      automatic_installation = false,
+      automatic_installation = true,
     })
 
     null_ls.setup({
       sources = {
         -- 既存の sources 設定
         null_ls.builtins.formatting.prettier,
-        null_ls.builtins.diagnostics.eslint_d,
+        -- null_ls.builtins.diagnostics.eslint,
         null_ls.builtins.formatting.stylua,
       },
     })
