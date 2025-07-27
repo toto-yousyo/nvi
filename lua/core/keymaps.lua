@@ -19,6 +19,7 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+keymap("n", "<leader>w", ":w<CR>", opts)
 -- New tab
 keymap("n", "te", ":tabedit", opts)
 keymap("n", "gn", ":tabnew<Return>", opts)
@@ -57,7 +58,6 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 keymap("v", "v", "$h", opts)
 
-
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
 
@@ -68,19 +68,19 @@ vim.keymap.set("n", "<C-n>", ":bnext<Return>", opts)
 vim.keymap.set("n", "<C-p>", ":bprevious<Return>", opts)
 -- 置き換えられた方のテキストはブラックホールレジスタに入る
 vim.keymap.set("v", "p", '"_dP', opts)
-vim.keymap.set('i', '<C-L>', '<Plug>(copilot-accept-word)')
+vim.keymap.set("i", "<C-L>", "<Plug>(copilot-accept-word)")
 -- ウィンドウの高さを増加
-vim.api.nvim_set_keymap('n', '<A-Down>', ':resize +2<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-Down>", ":resize +2<CR>", { noremap = true, silent = true })
 -- ウィンドウの高さを減少
-vim.api.nvim_set_keymap('n', '<A-Up>', ':resize -2<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-Up>", ":resize -2<CR>", { noremap = true, silent = true })
 -- ウィンドウの幅を増加
-vim.api.nvim_set_keymap('n', '<A-Left>', ':vertical resize +2<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-Left>", ":vertical resize +2<CR>", { noremap = true, silent = true })
 -- ウィンドウの幅を減少
-vim.api.nvim_set_keymap('n', '<A-Right>', ':vertical resize -2<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<A-Right>", ":vertical resize -2<CR>", { noremap = true, silent = true })
 -- Terminal-Normal
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 -- ChatGPT
-vim.keymap.set('n', '<Leader>cc', '<cmd>:ClaudeCode<CR>', { desc = 'Toggle Claude Code' })
+vim.keymap.set("n", "<Leader>cc", "<cmd>:ClaudeCode<CR>", { desc = "Toggle Claude Code" })
 -- Cursor用キーマップ
 if vim.g.vscode then
   vim.keymap.set("n", "<leader>ff", "<Cmd>call VSCodeNotify('workbench.action.quickOpen')<CR>")
