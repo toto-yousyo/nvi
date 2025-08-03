@@ -1,17 +1,16 @@
-
 -- lang
-if vim.fn.has('mac')==1 then -- 表示言語を英語にする（Mac）
--- vim.cmd('language en_US')
+if vim.fn.has("mac") == 1 then -- 表示言語を英語にする（Mac）
+  -- vim.cmd('language en_US')
 else
-vim.cmd('language en_US.utf8') -- 表示言語を英語にする（Linux）
+  vim.cmd("language en_US.utf8") -- 表示言語を英語にする（Linux）
 end
 
 -- ファイル
 vim.opt.fileencoding = "utf-8" -- エンコーディングをUTF-8に設定
-vim.opt.swapfile = false -- スワップファイルを作成しない
+vim.opt.swapfile = false       -- スワップファイルを作成しない
 -- vim.opt.helplang = "ja" -- ヘルプファイルの言語は日本語
-vim.opt.hidden = true -- バッファを切り替えるときに
-                      --ファイルを保存しなくてもOKに
+vim.opt.hidden = true          -- バッファを切り替えるときに
+--ファイルを保存しなくてもOKに
 
 -- カーソルと表示
 vim.opt.cursorline = true -- カーソルがある行を強調
@@ -22,38 +21,38 @@ vim.opt.clipboard:append({ "unnamedplus" }) -- レジスタとクリップボー
 
 -- メニューとコマンド
 vim.opt.wildmenu = true -- コマンドラインで補完
-vim.opt.cmdheight = 1 -- コマンドラインの表示行数
-vim.opt.laststatus = 3 -- 下部にステータスラインを表示
-vim.opt.showcmd = true -- コマンドラインに入力されたコマンドを表示
+vim.opt.cmdheight = 1   -- コマンドラインの表示行数
+vim.opt.laststatus = 3  -- 下部にステータスラインを表示
+vim.opt.showcmd = true  -- コマンドラインに入力されたコマンドを表示
 
 -- 検索・置換え
-vim.opt.hlsearch = true -- ハイライト検索を有効
+vim.opt.hlsearch = true  -- ハイライト検索を有効
 vim.opt.incsearch = true -- インクリメンタルサーチを有効
-vim.opt.matchtime = 1 -- 入力された文字列がマッチするまでにかかる時間
+vim.opt.matchtime = 1    -- 入力された文字列がマッチするまでにかかる時間
 
 -- カラースキーム
 vim.opt.termguicolors = true -- 24 ビットカラーを使用
-vim.opt.background = "dark" -- ダークカラーを使用する
+vim.opt.background = "dark"  -- ダークカラーを使用する
 
 -- インデント
-vim.opt.shiftwidth = 2 -- シフト幅を4に設定する
-vim.opt.tabstop = 2 -- タブ幅を2に設定する
-vim.opt.expandtab = true -- タブ文字をスペースに置き換える
-vim.opt.autoindent = true -- 自動インデントを有効にする
+vim.opt.shiftwidth = 2     -- シフト幅を4に設定する
+vim.opt.tabstop = 2        -- タブ幅を2に設定する
+vim.opt.expandtab = true   -- タブ文字をスペースに置き換える
+vim.opt.autoindent = true  -- 自動インデントを有効にする
 vim.opt.smartindent = true -- インデントをスマートに調整する
 
 -- 表示
-vim.opt.number = true -- 行番号を表示
+vim.opt.number = true          -- 行番号を表示
 vim.opt.relativenumber = false -- 相対行番号を表示
-vim.opt.wrap = true -- テキストの自動折り返しを無効に
-vim.opt.showtabline = 1 -- タブラインを表示
-                        -- （1:常に表示、2:タブが開かれたときに表示）
-vim.opt.visualbell = true -- ビープ音を表示する代わりに画面をフラッシュ
-vim.opt.showmatch = true -- 対応する括弧をハイライト表示
+vim.opt.wrap = true            -- テキストの自動折り返しを無効に
+vim.opt.showtabline = 1        -- タブラインを表示
+-- （1:常に表示、2:タブが開かれたときに表示）
+vim.opt.visualbell = true      -- ビープ音を表示する代わりに画面をフラッシュ
+vim.opt.showmatch = true       -- 対応する括弧をハイライト表示
 
 -- インタフェース
-vim.opt.winblend = 0 -- ウィンドウの不透明度
-vim.opt.pumblend = 0 -- ポップアップメニューの不透明度
+vim.opt.winblend = 0       -- ウィンドウの不透明度
+vim.opt.pumblend = 0       -- ポップアップメニューの不透明度
 vim.opt.signcolumn = "yes" -- サインカラムを表示
 
 ---- 行番号の色を変更（色は適宜変更してください）
@@ -64,7 +63,7 @@ vim.cmd("highlight LineNr guifg=#8a70ac")
 vim.opt.guicursor = {
   "n-v-c:block-Cursor/lCursor-blinkwait175-blinkon175-blinkoff175",
   "i:ver25-Cursor/lCursor-blinkwait175-blinkon175-blinkoff175",
-  "r-cr:hor20-Cursor/lCursor-blinkwait175-blinkon175-blinkoff175"
+  "r-cr:hor20-Cursor/lCursor-blinkwait175-blinkon175-blinkoff175",
 }
 -- fold
 vim.opt.foldcolumn = "1"
@@ -72,10 +71,9 @@ vim.opt.foldlevel = 99
 vim.opt.foldlevelstart = 99
 vim.opt.foldenable = true
 vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldtext = require("modules.foldtext")
 --package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?/init.lua;"
 --package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/?.lua;"
 --package.path = package.path .. ";" .. vim.fn.expand("$HOME") .. "/.luarocks/share/lua/5.1/magick/init.lua"
 --vim.api.nvim_set_hl(0, "CmpItemKindCopilot", {fg ="#6CC644"})
-
